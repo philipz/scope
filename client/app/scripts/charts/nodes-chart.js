@@ -156,7 +156,7 @@ const NodesChart = React.createClass({
         label: node.label_major,
         pseudo: node.pseudo,
         subLabel: node.label_minor,
-        degree: _.size(node.adjacency)
+        rank: node.rank
       });
     }, this);
 
