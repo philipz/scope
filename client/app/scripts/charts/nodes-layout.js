@@ -2,7 +2,6 @@ const _ = require('lodash');
 const d3 = require('d3');
 const webcola = require('webcola');
 const debug = require('debug')('scope:nodes-layout');
-const Naming = require('../constants/naming');
 
 const MAX_NODES = 100;
 
