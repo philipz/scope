@@ -2,6 +2,7 @@ const _ = require('lodash');
 const d3 = require('d3');
 const debug = require('debug')('scope:nodes-chart');
 const React = require('react');
+const md5 = require('md5');
 
 const Edge = require('./edge');
 const Naming = require('../constants/naming');
@@ -29,10 +30,6 @@ const NodesChart = React.createClass({
     };
   },
 
-  componentWillMount: function() {
-    this.updateGraphState(this.props);
-  },
-
   componentDidMount: function() {
     this.zoom = d3.behavior.zoom()
       .scaleExtent([0.1, 2])
@@ -40,19 +37,21 @@ const NodesChart = React.createClass({
 
     d3.select('.nodes-chart')
       .call(this.zoom);
+
+    this.updateGraphState(this.props);
   },
 
   componentWillReceiveProps: function(nextProps) {
+    debug('fingerprint',
+      _.size(nextProps.nodes), md5(this.getTopologyFingerprint(nextProps.nodes)),
+      _.size(nextProps.nodes), md5(this.getTopologyFingerprint(this.props.nodes)));
     if (this.getTopologyFingerprint(nextProps.nodes) !== this.getTopologyFingerprint(this.props.nodes)) {
       this.setState({
-        nodes: [],
-        edges: [],
         hasZoomed: false,
         initialLayout: true
       });
+      this.updateGraphState(nextProps);
     }
-
-    this.updateGraphState(nextProps);
   },
 
   componentWillUnmount: function() {
@@ -142,10 +141,10 @@ const NodesChart = React.createClass({
     const nodes = {};
 
     _.each(topology, function(node, id) {
-      nodes[id] = prevNodes[id] || {};
+      nodes[id] = {};
 
       // use cached positions if available
-      _.defaults(nodes[id], {
+      _.defaults(nodes[id], prevNodes[id], {
         x: centerX,
         y: centerY
       });
@@ -183,8 +182,8 @@ const NodesChart = React.createClass({
           edges[edgeId] = {
             id: edgeId,
             value: 1,
-            source: source,
-            target: target
+            source: target,
+            target: source
           };
         }
       });
@@ -207,6 +206,8 @@ const NodesChart = React.createClass({
     const expanse = Math.min(props.height, props.width);
     const nodeSize = expanse / 2;
     const nodeScale = d3.scale.linear().range([0, nodeSize / Math.pow(n, 0.7)]);
+
+    debug('fingerprint', md5(JSON.stringify(_.keys(nodes)) + JSON.stringify(_.keys(edges))));
 
     let graph = NodesLayout.doLayout(nodes, edges, width, height, nodeScale);
     if (this.state.initialLayout && graph.width > 0) {
