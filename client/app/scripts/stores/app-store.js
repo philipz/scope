@@ -34,6 +34,7 @@ function makeNode(node) {
   return {
     id: node.id,
     label_major: node.label_major,
+    label_minor: node.label_minor,
     rank: node.rank,
     pseudo: node.pseudo,
     adjacency: node.adjacency
