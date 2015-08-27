@@ -212,10 +212,6 @@ const NodesChart = React.createClass({
     debug('fingerprint', md5(JSON.stringify(_.keys(nodes)) + JSON.stringify(_.keys(edges))));
 
     let graph = NodesLayout.doLayout(nodes, edges, width, height, nodeScale);
-    if (this.state.initialLayout && graph.width > 0) {
-      debug('running layout twice to reduce jitter on initial layout');
-      graph = NodesLayout.doLayout(nodes, edges, width, height, nodeScale);
-    }
 
     // adjust layout based on viewport
     const empty = graph.width === 0;
