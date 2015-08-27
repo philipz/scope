@@ -60,6 +60,16 @@ func MakeContainerNodeID(hostID, containerID string) string {
 	return hostID + ScopeDelim + containerID
 }
 
+// MakePodNodeID produces a pod node ID from its composite parts.
+func MakePodNodeID(hostID, podID string) string {
+	return hostID + ScopeDelim + podID
+}
+
+// MakeServiceNodeID produces a service node ID from its composite parts.
+func MakeServiceNodeID(hostID, serviceID string) string {
+	return hostID + ScopeDelim + serviceID
+}
+
 // MakeOverlayNodeID produces an overlay topology node ID from a router peer's
 // name, which is assumed to be globally unique.
 func MakeOverlayNodeID(peerName string) string {

@@ -161,3 +161,16 @@ var HostRenderer = MakeReduce(
 		Renderer: SelectHost,
 	},
 )
+
+// KubernetesRenderer is a Renderer which produces a renderable kubernetes
+// graph by merging the container graph and the kubernetes topology.
+var KubernetesRenderer = MakeReduce(
+	Map{
+		MapFunc:  MapContainer2Pod,
+		Renderer: ContainerRenderer,
+	},
+	Map{
+		MapFunc:  MapPodIdentity,
+		Renderer: SelectPod,
+	},
+)

@@ -1,0 +1,3969 @@
+{
+   "ContainerImage" : {
+      "Adjacency" : {},
+      "EdgeMetadatas" : {},
+      "NodeMetadatas" : {
+         "kubernetes-minion-1lle;b6e57ec0903bf894c2703e1ea70434b86f2503258b60ed4ad0dbf52388afdef1" : {
+            "Metadata" : {
+               "docker_image_name" : "gcr.io/google_containers/fluentd-gcp:1.11",
+               "docker_image_id" : "b6e57ec0903bf894c2703e1ea70434b86f2503258b60ed4ad0dbf52388afdef1",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "container_image"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;c144d89158dc68fe09f4fb2e2dc66c4d8a6b67fd70e4570ffa0ef0df905c4f29" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "container_image",
+               "docker_image_name" : "gcr.io/google_containers/kube-ui:v1.1",
+               "docker_image_id" : "c144d89158dc68fe09f4fb2e2dc66c4d8a6b67fd70e4570ffa0ef0df905c4f29"
+            }
+         },
+         "kubernetes-minion-1lle;22182f122d461ef2e96af4c2ac1ebfbccf127894da9e9ceb56f7d74496583b30" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "container_image",
+               "docker_image_name" : "gcr.io/google_containers/heapster_grafana:v0.7",
+               "docker_image_id" : "22182f122d461ef2e96af4c2ac1ebfbccf127894da9e9ceb56f7d74496583b30"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;0fc71b689ea8de4c00395022dfb69635e9fd4d170a569269f0b1939b74bf308b" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "container_image",
+               "docker_image_name" : "gcr.io/google_containers/heapster:v0.17.0",
+               "docker_image_id" : "0fc71b689ea8de4c00395022dfb69635e9fd4d170a569269f0b1939b74bf308b"
+            }
+         },
+         "kubernetes-minion-wr4o;b6e57ec0903bf894c2703e1ea70434b86f2503258b60ed4ad0dbf52388afdef1" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "container_image",
+               "docker_image_name" : "gcr.io/google_containers/fluentd-gcp:1.11",
+               "docker_image_id" : "b6e57ec0903bf894c2703e1ea70434b86f2503258b60ed4ad0dbf52388afdef1"
+            }
+         },
+         "kubernetes-minion-wr4o;b6b9a86dc06aa1361357ca1b105feba961f6a4145adca6c54e142c0be0fe87b0" : {
+            "Counters" : {},
+            "Metadata" : {
+               "docker_image_id" : "b6b9a86dc06aa1361357ca1b105feba961f6a4145adca6c54e142c0be0fe87b0",
+               "docker_image_name" : "gcr.io/google_containers/etcd:2.0.9",
+               "topology" : "container_image",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;791ddf327076e0fd35a1125568a56c05ee1f1dfd7a165c74f4d489d8a5e65ac5" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "container_image",
+               "docker_image_name" : "gcr.io/google_containers/skydns:2015-03-11-001",
+               "docker_image_id" : "791ddf327076e0fd35a1125568a56c05ee1f1dfd7a165c74f4d489d8a5e65ac5"
+            }
+         },
+         "kubernetes-minion-wr4o;4f3d04b1d47b64834d494f9416d1f17a5f93a3e2035ad604fee47cfbba62be60" : {
+            "Metadata" : {
+               "topology" : "container_image",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "docker_image_id" : "4f3d04b1d47b64834d494f9416d1f17a5f93a3e2035ad604fee47cfbba62be60",
+               "docker_image_name" : "gcr.io/google_containers/exechealthz:1.0"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;2c40b0526b6358710fd09e7b8c022429268cc61703b4777e528ac9d469a07ca1" : {
+            "Counters" : {},
+            "Metadata" : {
+               "docker_image_name" : "gcr.io/google_containers/pause:0.8.0",
+               "docker_image_id" : "2c40b0526b6358710fd09e7b8c022429268cc61703b4777e528ac9d469a07ca1",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "container_image"
+            }
+         },
+         "kubernetes-minion-wr4o;af296e56f2fc62d6f2cf8a8dee6049e937f4a7aaee6065c1cba7adf35fe0e85d" : {
+            "Metadata" : {
+               "topology" : "container_image",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "docker_image_id" : "af296e56f2fc62d6f2cf8a8dee6049e937f4a7aaee6065c1cba7adf35fe0e85d",
+               "docker_image_name" : "weaveworks/scope:latest"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;2c40b0526b6358710fd09e7b8c022429268cc61703b4777e528ac9d469a07ca1" : {
+            "Counters" : {},
+            "Metadata" : {
+               "docker_image_name" : "gcr.io/google_containers/pause:0.8.0",
+               "docker_image_id" : "2c40b0526b6358710fd09e7b8c022429268cc61703b4777e528ac9d469a07ca1",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "container_image"
+            }
+         },
+         "kubernetes-minion-1lle;514b330600afe3ed9f948f65fab7593b374075d194c65263fe3bafc43820fdad" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "container_image",
+               "docker_image_name" : "gcr.io/google_containers/heapster_influxdb:v0.3",
+               "docker_image_id" : "514b330600afe3ed9f948f65fab7593b374075d194c65263fe3bafc43820fdad"
+            }
+         },
+         "kubernetes-minion-wr4o;e52a547dca17cd83e8b6022e8ae1c1883d0855bce2d1c30071ffa0dcb8a8caf6" : {
+            "Metadata" : {
+               "docker_image_id" : "e52a547dca17cd83e8b6022e8ae1c1883d0855bce2d1c30071ffa0dcb8a8caf6",
+               "docker_image_name" : "gcr.io/google_containers/kube2sky:1.11",
+               "topology" : "container_image",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;af296e56f2fc62d6f2cf8a8dee6049e937f4a7aaee6065c1cba7adf35fe0e85d" : {
+            "Counters" : {},
+            "Metadata" : {
+               "docker_image_id" : "af296e56f2fc62d6f2cf8a8dee6049e937f4a7aaee6065c1cba7adf35fe0e85d",
+               "docker_image_name" : "weaveworks/scope:latest",
+               "topology" : "container_image",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         }
+      }
+   },
+   "Process" : {
+      "EdgeMetadatas" : {},
+      "Adjacency" : {},
+      "NodeMetadatas" : {
+         "kubernetes-minion-1lle;2350" : {
+            "Counters" : {},
+            "Metadata" : {
+               "pid" : "2350",
+               "cmdline" : "/usr/bin/python /usr/share/google/google_daemon/manage_addresses.py ",
+               "ppid" : "1",
+               "threads" : "1",
+               "comm" : "manage_addresse",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-1lle;13027" : {
+            "Counters" : {},
+            "Metadata" : {
+               "ppid" : "3426",
+               "cmdline" : "sleep 10 ",
+               "pid" : "13027",
+               "comm" : "sleep",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-1lle;2232" : {
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "sshd",
+               "threads" : "1",
+               "ppid" : "1",
+               "cmdline" : "/usr/sbin/sshd ",
+               "pid" : "2232"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;3427" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "comm" : "getty",
+               "threads" : "1",
+               "ppid" : "1",
+               "cmdline" : "/sbin/getty 38400 tty5 ",
+               "pid" : "3427"
+            }
+         },
+         "kubernetes-minion-1lle;17" : {
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "khugepaged",
+               "pid" : "17",
+               "ppid" : "2",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;2" : {
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "kthreadd",
+               "threads" : "1",
+               "pid" : "2"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;3" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "comm" : "ksoftirqd/0",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "3"
+            }
+         },
+         "kubernetes-minion-1lle;1861" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "rsyslogd",
+               "threads" : "4",
+               "cmdline" : "/usr/sbin/rsyslogd -c5 ",
+               "ppid" : "1",
+               "pid" : "1861"
+            }
+         },
+         "kubernetes-minion-wr4o;19" : {
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "comm" : "kintegrityd",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "19"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;8" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process",
+               "pid" : "8",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "rcu_bh"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;3426" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "cmdline" : "/sbin/getty 38400 tty4 ",
+               "ppid" : "1",
+               "pid" : "3426",
+               "comm" : "getty",
+               "threads" : "1"
+            }
+         },
+         "kubernetes-minion-1lle;2330" : {
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "startpar",
+               "threads" : "1",
+               "cmdline" : "startpar -f -- google-accounts-manager ",
+               "ppid" : "1",
+               "pid" : "2330"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;3484" : {
+            "Metadata" : {
+               "comm" : "kube-proxy",
+               "threads" : "7",
+               "ppid" : "1",
+               "cmdline" : "/usr/local/bin/kube-proxy --master=https://kubernetes-master --kubeconfig=/var/lib/kube-proxy/kubeconfig --v=2 ",
+               "pid" : "3484",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;4117" : {
+            "Counters" : {},
+            "Metadata" : {
+               "pid" : "4117",
+               "ppid" : "3935",
+               "cmdline" : "docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8083 -container-ip 10.244.0.4 -container-port 8083 ",
+               "threads" : "6",
+               "comm" : "docker",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-1lle;1" : {
+            "Counters" : {},
+            "Metadata" : {
+               "comm" : "init",
+               "threads" : "1",
+               "cmdline" : "init [2]   ",
+               "pid" : "1",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;32315" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "1",
+               "comm" : "sleep",
+               "pid" : "32315",
+               "ppid" : "3433",
+               "cmdline" : "sleep 10 "
+            }
+         },
+         "kubernetes-minion-wr4o;3424" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "pid" : "3424",
+               "cmdline" : "/sbin/getty 38400 tty2 ",
+               "ppid" : "1",
+               "threads" : "1",
+               "comm" : "getty"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;4096" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "docker",
+               "threads" : "8",
+               "cmdline" : "docker-proxy -proto tcp -host-ip 0.0.0.0 -host-port 8086 -container-ip 10.244.0.4 -container-port 8086 ",
+               "ppid" : "3935",
+               "pid" : "4096"
+            }
+         },
+         "kubernetes-minion-1lle;4481" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "docker_container_id" : "e32fac145bfb04e3abd8573d9be61f85f104b1793f6a17271ff04cc006f8210c",
+               "ppid" : "4474",
+               "topology" : "process",
+               "pid" : "4481",
+               "cmdline" : "/opt/google-fluentd/embedded/bin/ruby /usr/sbin/google-fluentd -qq ",
+               "threads" : "2",
+               "comm" : "google-fluentd"
+            }
+         },
+         "kubernetes-minion-wr4o;2420" : {
+            "Metadata" : {
+               "cmdline" : "/usr/sbin/ntpd -p /var/run/ntpd.pid -g -c /var/lib/ntp/ntp.conf.dhcp -u 101:103 ",
+               "ppid" : "1",
+               "pid" : "2420",
+               "comm" : "ntpd",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;3486" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "10",
+               "comm" : "kubelet",
+               "pid" : "3486",
+               "ppid" : "1",
+               "cmdline" : "/usr/local/bin/kubelet --api-servers=https://kubernetes-master --enable-debugging-handlers=true --cloud-provider=gce --config=/etc/kubernetes/manifests --allow-privileged=False --v=2 --cluster-dns=10.0.0.10 --cluster-domain=cluster.local --configure-cbr0=true --cgroup-root=/ --system-container=/system "
+            }
+         },
+         "kubernetes-minion-wr4o;7" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "ppid" : "2",
+               "pid" : "7",
+               "comm" : "rcu_sched",
+               "threads" : "1"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;4474" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "docker_container_id" : "e32fac145bfb04e3abd8573d9be61f85f104b1793f6a17271ff04cc006f8210c",
+               "ppid" : "3935",
+               "topology" : "process",
+               "comm" : "sh",
+               "threads" : "1",
+               "cmdline" : "/bin/sh -c /usr/sbin/google-fluentd \"$FLUENTD_ARGS\" > /var/log/google-fluentd.log ",
+               "pid" : "4474"
+            }
+         },
+         "kubernetes-minion-1lle;4673" : {
+            "Counters" : {},
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "run.sh",
+               "pid" : "4673",
+               "cmdline" : "/bin/bash /run.sh ",
+               "topology" : "process",
+               "docker_container_id" : "8749e1c05a636d20ae7c7d55fc347365fc216bd1fdff7bad55e8fa6ab4ab6956",
+               "ppid" : "3935",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;32391" : {
+            "Metadata" : {
+               "docker_container_id" : "faee44799c2edf05fdebfc50dd32834472552edaf202cd72ef88036212ba00bc",
+               "ppid" : "3943",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "6",
+               "comm" : "heapster",
+               "pid" : "32391",
+               "cmdline" : "/heapster --source=kubernetes:'' --sink=gcl --sink=gcmautoscaling --sink=influxdb:http://monitoring-influxdb:8086 --poll_duration=2m --stats_resolution=1m ",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;12398" : {
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "manage_accounts",
+               "pid" : "12398",
+               "ppid" : "2332",
+               "cmdline" : "/usr/bin/python /usr/share/google/google_daemon/manage_accounts.py --daemon ",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;19762" : {
+            "Counters" : {},
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "runsv",
+               "pid" : "19762",
+               "cmdline" : "runsv probe ",
+               "topology" : "process",
+               "ppid" : "19738",
+               "docker_container_id" : "ab7f3494f3c4266de793f0b6618044bdf903bcea1806df102ec56a11227b2b15",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;27768" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "ppid" : "2",
+               "pid" : "27768",
+               "comm" : "kworker/0:2",
+               "threads" : "1"
+            }
+         },
+         "kubernetes-minion-wr4o;24728" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "docker_container_id" : "5efffbb86f589d045d7a18559efc168cde2bcd736489c214bd383e374cf55cef",
+               "ppid" : "24707",
+               "topology" : "process",
+               "threads" : "1",
+               "comm" : "runsv",
+               "pid" : "24728",
+               "cmdline" : "runsv probe "
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;32206" : {
+            "Counters" : {},
+            "Metadata" : {
+               "comm" : "sleep",
+               "threads" : "1",
+               "ppid" : "3434",
+               "cmdline" : "sleep 10 ",
+               "pid" : "32206",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-1lle;4067" : {
+            "Metadata" : {
+               "ppid" : "351",
+               "cmdline" : "udevd --daemon ",
+               "pid" : "4067",
+               "comm" : "udevd",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;1952" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "1",
+               "comm" : "cron",
+               "pid" : "1952",
+               "cmdline" : "/usr/sbin/cron ",
+               "ppid" : "1"
+            }
+         },
+         "kubernetes-minion-1lle;24" : {
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "fsnotify_mark",
+               "pid" : "24",
+               "ppid" : "2",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;11" : {
+            "Metadata" : {
+               "pid" : "11",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "khelper",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;14" : {
+            "Counters" : {},
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "khungtaskd",
+               "pid" : "14",
+               "ppid" : "2",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-1lle;19" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "kintegrityd",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "19"
+            }
+         },
+         "kubernetes-minion-1lle;3424" : {
+            "Metadata" : {
+               "pid" : "3424",
+               "cmdline" : "/bin/bash /usr/sbin/kubelet-checker.sh ",
+               "ppid" : "3412",
+               "threads" : "1",
+               "comm" : "kubelet-checker",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;3420" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process",
+               "pid" : "3420",
+               "cmdline" : "/sbin/getty 38400 tty5 ",
+               "ppid" : "1",
+               "threads" : "1",
+               "comm" : "getty"
+            }
+         },
+         "kubernetes-minion-wr4o;31" : {
+            "Metadata" : {
+               "ppid" : "2",
+               "pid" : "31",
+               "comm" : "ipv6_addrconf",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;2332" : {
+            "Counters" : {},
+            "Metadata" : {
+               "cmdline" : "/usr/bin/python /usr/share/google/google_daemon/manage_accounts.py --daemon ",
+               "ppid" : "1",
+               "pid" : "2332",
+               "comm" : "manage_accounts",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-1lle;2417" : {
+            "Metadata" : {
+               "pid" : "2417",
+               "cmdline" : "/usr/sbin/ntpd -p /var/run/ntpd.pid -g -c /var/lib/ntp/ntp.conf.dhcp -u 101:103 ",
+               "ppid" : "1",
+               "threads" : "1",
+               "comm" : "ntpd",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;1682" : {
+            "Counters" : {},
+            "Metadata" : {
+               "pid" : "1682",
+               "ppid" : "1",
+               "cmdline" : "dhclient -v -pf /run/dhclient.eth0.pid -lf /var/lib/dhcp/dhclient.eth0.leases eth0 ",
+               "threads" : "1",
+               "comm" : "dhclient",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-wr4o;4237" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "threads" : "6",
+               "comm" : "etcd",
+               "pid" : "4237",
+               "cmdline" : "/usr/local/bin/etcd -data-dir /var/etcd/data -listen-client-urls http://127.0.0.1:2379,http://127.0.0.1:4001 -advertise-client-urls http://127.0.0.1:2379,http://127.0.0.1:4001 -initial-cluster-token skydns-etcd ",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "docker_container_id" : "be34b8e0f1135b5764ff9944350c755dbc017659a48195399167cb9dc5646e2f",
+               "ppid" : "3943"
+            }
+         },
+         "kubernetes-minion-wr4o;1901" : {
+            "Metadata" : {
+               "cmdline" : "/usr/sbin/acpid ",
+               "ppid" : "1",
+               "pid" : "1901",
+               "comm" : "acpid",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;3425" : {
+            "Counters" : {},
+            "Metadata" : {
+               "ppid" : "3412",
+               "cmdline" : "/bin/bash /usr/sbin/docker-checker.sh ",
+               "pid" : "3425",
+               "comm" : "docker-checker.",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-wr4o;18" : {
+            "Counters" : {},
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "crypto",
+               "pid" : "18",
+               "ppid" : "2",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-1lle;22" : {
+            "Metadata" : {
+               "pid" : "22",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "kworker/0:1",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;204" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process",
+               "pid" : "204",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "ext4-rsv-conver"
+            }
+         },
+         "kubernetes-minion-wr4o;205" : {
+            "Counters" : {},
+            "Metadata" : {
+               "comm" : "jbd2/sda1-8",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "205",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;4100" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "ppid" : "3943",
+               "docker_container_id" : "dafb9d7a182321fff84388e24be5d012f2521777a1928941d3416549c45c0a86",
+               "topology" : "process",
+               "pid" : "4100",
+               "cmdline" : "/pause ",
+               "threads" : "3",
+               "comm" : "pause"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;497" : {
+            "Counters" : {},
+            "Metadata" : {
+               "comm" : "kpsmoused",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "497",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;34" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "pid" : "34",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "kworker/u2:1"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;23" : {
+            "Counters" : {},
+            "Metadata" : {
+               "pid" : "23",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "kswapd0",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-wr4o;353" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "1",
+               "comm" : "udevd",
+               "pid" : "353",
+               "cmdline" : "udevd --daemon ",
+               "ppid" : "1"
+            }
+         },
+         "kubernetes-minion-wr4o;131" : {
+            "Counters" : {},
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "kworker/u2:2",
+               "pid" : "131",
+               "ppid" : "2",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;3423" : {
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "comm" : "getty",
+               "threads" : "1",
+               "ppid" : "1",
+               "cmdline" : "/sbin/getty 38400 tty1 ",
+               "pid" : "3423"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;34" : {
+            "Counters" : {},
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "kworker/u2:1",
+               "pid" : "34",
+               "ppid" : "2",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         "kubernetes-minion-1lle;3412" : {
+            "Counters" : {},
+            "Metadata" : {
+               "comm" : "supervisord",
+               "threads" : "1",
+               "cmdline" : "/usr/bin/python /usr/bin/supervisord -c /etc/supervisor/supervisord.conf ",
+               "ppid" : "1",
+               "pid" : "3412",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         "kubernetes-minion-1lle;1680" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "threads" : "1",
+               "comm" : "dhclient",
+               "pid" : "1680",
+               "cmdline" : "dhclient -v -pf /run/dhclient.eth0.pid -lf /var/lib/dhcp/dhclient.eth0.leases eth0 ",
+               "ppid" : "1"
+            }
+         },
+         "kubernetes-minion-1lle;10" : {
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "watchdog/0",
+               "pid" : "10",
+               "ppid" : "2",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;3426" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process",
+               "pid" : "3426",
+               "cmdline" : "/bin/bash /usr/sbin/kube-proxy-checker.sh ",
+               "ppid" : "3412",
+               "threads" : "1",
+               "comm" : "kube-proxy-chec"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;5" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "ppid" : "2",
+               "pid" : "5",
+               "comm" : "kworker/0:0H",
+               "threads" : "1"
+            }
+         },
+         "kubernetes-minion-wr4o;4137" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "pid" : "4137",
+               "cmdline" : "/pause ",
+               "threads" : "3",
+               "comm" : "pause",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "docker_container_id" : "660c9696b58e96bfbf6506b11f6f4f59fc739db6d9f4d774f6ca48377213cfb0",
+               "ppid" : "3943"
+            }
+         },
+         "kubernetes-minion-wr4o;129" : {
+            "Counters" : {},
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "scsi_eh_0",
+               "pid" : "129",
+               "ppid" : "2",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-1lle;2362" : {
+            "Metadata" : {
+               "pid" : "2362",
+               "ppid" : "1",
+               "cmdline" : "/usr/bin/python /usr/share/google/google_daemon/manage_clock_sync.py ",
+               "threads" : "1",
+               "comm" : "manage_clock_sy",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;14" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "threads" : "1",
+               "comm" : "khungtaskd",
+               "pid" : "14",
+               "ppid" : "2"
+            }
+         },
+         "kubernetes-minion-1lle;7" : {
+            "Metadata" : {
+               "comm" : "rcu_sched",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "7",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;493" : {
+            "Counters" : {},
+            "Metadata" : {
+               "pid" : "493",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "kpsmoused",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-1lle;13031" : {
+            "Metadata" : {
+               "pid" : "13031",
+               "cmdline" : "sleep 10 ",
+               "ppid" : "3424",
+               "threads" : "1",
+               "comm" : "sleep",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;4465" : {
+            "Metadata" : {
+               "ppid" : "3943",
+               "docker_container_id" : "3ee4dbb384e804a53e420872c7a931fee2987529eb1e9e0758e2f187635fd893",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "pid" : "4465",
+               "cmdline" : "/kube2sky -domain=cluster.local ",
+               "threads" : "5",
+               "comm" : "kube2sky",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;203" : {
+            "Counters" : {},
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "jbd2/sda1-8",
+               "pid" : "203",
+               "ppid" : "2",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;20363" : {
+            "Counters" : {},
+            "Metadata" : {
+               "comm" : "kworker/0:0",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "20363",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-1lle;19763" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "ppid" : "19762",
+               "docker_container_id" : "ab7f3494f3c4266de793f0b6618044bdf903bcea1806df102ec56a11227b2b15",
+               "topology" : "process",
+               "cmdline" : "/home/weave/scope-probe -docker=true -docker.bridge=cbr0 kubernetes-master ",
+               "pid" : "19763",
+               "comm" : "scope-probe",
+               "threads" : "7"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;129" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process",
+               "pid" : "129",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "kworker/u2:2"
+            }
+         },
+         "kubernetes-minion-wr4o;31849" : {
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "1",
+               "comm" : "sleep",
+               "pid" : "31849",
+               "cmdline" : "sleep 10 ",
+               "ppid" : "3433"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;33" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "deferwq",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "33"
+            }
+         },
+         "kubernetes-minion-wr4o;3428" : {
+            "Metadata" : {
+               "pid" : "3428",
+               "cmdline" : "/sbin/getty 38400 tty6 ",
+               "ppid" : "1",
+               "threads" : "1",
+               "comm" : "getty",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;3417" : {
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "getty",
+               "threads" : "1",
+               "cmdline" : "/sbin/getty 38400 tty2 ",
+               "ppid" : "1",
+               "pid" : "3417"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;4522" : {
+            "Metadata" : {
+               "comm" : "sh",
+               "threads" : "1",
+               "cmdline" : "/bin/sh -c /usr/sbin/google-fluentd \"$FLUENTD_ARGS\" > /var/log/google-fluentd.log ",
+               "pid" : "4522",
+               "topology" : "process",
+               "docker_container_id" : "c0b02922f015ab36a1657ccfb0e3fab037631c06ef884abf60a9bf6e18fe925e",
+               "ppid" : "3943",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;13" : {
+            "Counters" : {},
+            "Metadata" : {
+               "ppid" : "2",
+               "pid" : "13",
+               "comm" : "netns",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-wr4o;3435" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "1",
+               "comm" : "kube-proxy-chec",
+               "pid" : "3435",
+               "ppid" : "3419",
+               "cmdline" : "/bin/bash /usr/sbin/kube-proxy-checker.sh "
+            }
+         },
+         "kubernetes-minion-1lle;16" : {
+            "Metadata" : {
+               "pid" : "16",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "ksmd",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;21" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "pid" : "21",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "kblockd"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;19761" : {
+            "Metadata" : {
+               "ppid" : "19738",
+               "docker_container_id" : "ab7f3494f3c4266de793f0b6618044bdf903bcea1806df102ec56a11227b2b15",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "cmdline" : "runsv app ",
+               "pid" : "19761",
+               "comm" : "runsv",
+               "threads" : "1",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;3943" : {
+            "Metadata" : {
+               "cmdline" : "/usr/bin/docker -d -p /var/run/docker.pid --bridge=cbr0 --iptables=false --ip-masq=false ",
+               "ppid" : "1",
+               "pid" : "3943",
+               "comm" : "docker",
+               "threads" : "55",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;4076" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "cmdline" : "udevd --daemon ",
+               "ppid" : "353",
+               "pid" : "4076",
+               "comm" : "udevd",
+               "threads" : "1"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;4682" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "ppid" : "4673",
+               "docker_container_id" : "8749e1c05a636d20ae7c7d55fc347365fc216bd1fdff7bad55e8fa6ab4ab6956",
+               "topology" : "process",
+               "pid" : "4682",
+               "cmdline" : "/usr/bin/influxdb -config=/config/config.toml ",
+               "threads" : "6",
+               "comm" : "influxdb"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;4267" : {
+            "Counters" : {},
+            "Metadata" : {
+               "pid" : "4267",
+               "cmdline" : "/kube-ui ",
+               "threads" : "4",
+               "comm" : "kube-ui",
+               "topology" : "process",
+               "docker_container_id" : "f825219bca0039ab67a1f2c68eedd6772bd7a8f39586850563c02abe80a97853",
+               "ppid" : "3935",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;17" : {
+            "Metadata" : {
+               "ppid" : "2",
+               "pid" : "17",
+               "comm" : "khugepaged",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;2258" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "1",
+               "comm" : "sshd",
+               "pid" : "2258",
+               "cmdline" : "/usr/sbin/sshd ",
+               "ppid" : "1"
+            }
+         },
+         "kubernetes-minion-wr4o;31471" : {
+            "Metadata" : {
+               "ppid" : "2339",
+               "cmdline" : "/usr/bin/python /usr/share/google/google_daemon/manage_accounts.py --daemon ",
+               "pid" : "31471",
+               "comm" : "manage_accounts",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;2337" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "cmdline" : "startpar -f -- google-accounts-manager ",
+               "ppid" : "1",
+               "pid" : "2337",
+               "comm" : "startpar",
+               "threads" : "1"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;128" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process",
+               "ppid" : "2",
+               "pid" : "128",
+               "comm" : "scsi_tmf_0",
+               "threads" : "1"
+            }
+         },
+         "kubernetes-minion-1lle;1894" : {
+            "Counters" : {},
+            "Metadata" : {
+               "pid" : "1894",
+               "cmdline" : "/usr/sbin/acpid ",
+               "ppid" : "1",
+               "threads" : "1",
+               "comm" : "acpid",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-1lle;3962" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "threads" : "1",
+               "comm" : "udevd",
+               "pid" : "3962",
+               "ppid" : "351",
+               "cmdline" : "udevd --daemon "
+            }
+         },
+         "kubernetes-minion-1lle;12940" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "sleep",
+               "threads" : "1",
+               "cmdline" : "sleep 10 ",
+               "ppid" : "3425",
+               "pid" : "12940"
+            }
+         },
+         "kubernetes-minion-1lle;18" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process",
+               "ppid" : "2",
+               "pid" : "18",
+               "comm" : "crypto",
+               "threads" : "1"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;3473" : {
+            "Counters" : {},
+            "Metadata" : {
+               "threads" : "7",
+               "comm" : "kube-proxy",
+               "pid" : "3473",
+               "cmdline" : "/usr/local/bin/kube-proxy --master=https://kubernetes-master --kubeconfig=/var/lib/kube-proxy/kubeconfig --v=2 ",
+               "ppid" : "1",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;3972" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "pid" : "3972",
+               "ppid" : "353",
+               "cmdline" : "udevd --daemon ",
+               "threads" : "1",
+               "comm" : "udevd"
+            }
+         },
+         "kubernetes-minion-wr4o;24729" : {
+            "Metadata" : {
+               "topology" : "process",
+               "comm" : "scope-probe",
+               "threads" : "7",
+               "cmdline" : "/home/weave/scope-probe -docker=true -docker.bridge=cbr0 kubernetes-master ",
+               "pid" : "24729",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "docker_container_id" : "5efffbb86f589d045d7a18559efc168cde2bcd736489c214bd383e374cf55cef",
+               "ppid" : "24728"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;141" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "1",
+               "comm" : "kworker/0:1H",
+               "pid" : "141",
+               "ppid" : "2"
+            }
+         },
+         "kubernetes-minion-wr4o;32158" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "comm" : "heapster",
+               "threads" : "4",
+               "cmdline" : "/heapster --source=kubernetes:'' --sink=gcl --sink=gcmautoscaling --sink=influxdb:http://monitoring-influxdb:8086 --poll_duration=2m --stats_resolution=1m ",
+               "pid" : "32158",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "ppid" : "3943",
+               "docker_container_id" : "446ec349b5c18ab70b4a0cc823da3bafe7bf0536c7ca3d853c88b4dbb25d5da5"
+            }
+         },
+         "kubernetes-minion-1lle;19764" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "threads" : "6",
+               "comm" : "scope-app",
+               "pid" : "19764",
+               "cmdline" : "/home/weave/scope-app ",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "ppid" : "19761",
+               "docker_container_id" : "ab7f3494f3c4266de793f0b6618044bdf903bcea1806df102ec56a11227b2b15"
+            }
+         },
+         "kubernetes-minion-wr4o;4528" : {
+            "Metadata" : {
+               "topology" : "process",
+               "threads" : "2",
+               "comm" : "google-fluentd",
+               "pid" : "4528",
+               "cmdline" : "/opt/google-fluentd/embedded/bin/ruby /usr/sbin/google-fluentd -qq ",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "docker_container_id" : "c0b02922f015ab36a1657ccfb0e3fab037631c06ef884abf60a9bf6e18fe925e",
+               "ppid" : "4522"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;2367" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "pid" : "2367",
+               "ppid" : "1",
+               "cmdline" : "/usr/bin/python /usr/share/google/google_daemon/manage_clock_sync.py ",
+               "threads" : "1",
+               "comm" : "manage_clock_sy"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;23" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process",
+               "pid" : "23",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "kswapd0"
+            }
+         },
+         "kubernetes-minion-1lle;1960" : {
+            "Counters" : {},
+            "Metadata" : {
+               "pid" : "1960",
+               "cmdline" : "/usr/sbin/cron ",
+               "ppid" : "1",
+               "threads" : "1",
+               "comm" : "cron",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-wr4o;24730" : {
+            "Counters" : {},
+            "Metadata" : {
+               "docker_container_id" : "5efffbb86f589d045d7a18559efc168cde2bcd736489c214bd383e374cf55cef",
+               "ppid" : "24727",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "cmdline" : "/home/weave/scope-app ",
+               "pid" : "24730",
+               "comm" : "scope-app",
+               "threads" : "7",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-wr4o;130" : {
+            "Counters" : {},
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "scsi_tmf_0",
+               "pid" : "130",
+               "ppid" : "2",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-1lle;3982" : {
+            "Metadata" : {
+               "comm" : "pause",
+               "threads" : "3",
+               "cmdline" : "/pause ",
+               "pid" : "3982",
+               "topology" : "process",
+               "docker_container_id" : "5efd99755a475c65645734179d3e4cd74c4dded2f533dd0d1b5a78bb8b42a8b7",
+               "ppid" : "3935",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;12752" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "sleep",
+               "threads" : "1",
+               "cmdline" : "sleep 10 ",
+               "ppid" : "3425",
+               "pid" : "12752"
+            }
+         },
+         "kubernetes-minion-wr4o;24" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "1",
+               "comm" : "fsnotify_mark",
+               "pid" : "24",
+               "ppid" : "2"
+            }
+         },
+         "kubernetes-minion-1lle;15" : {
+            "Counters" : {},
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "writeback",
+               "pid" : "15",
+               "ppid" : "2",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         "kubernetes-minion-1lle;3419" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process",
+               "pid" : "3419",
+               "ppid" : "1",
+               "cmdline" : "/sbin/getty 38400 tty4 ",
+               "threads" : "1",
+               "comm" : "getty"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;12851" : {
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "threads" : "1",
+               "comm" : "sleep",
+               "pid" : "12851",
+               "cmdline" : "sleep 10 ",
+               "ppid" : "3424"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;15002" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "kworker/0:0",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "15002"
+            }
+         },
+         "kubernetes-minion-wr4o;4733" : {
+            "Metadata" : {
+               "ppid" : "3943",
+               "docker_container_id" : "270df08e8d8a3fad401eb6956c9f8fec3515618e5c9f2d9299a1d0d279f02b46",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "cmdline" : "/exechealthz -cmd=nslookup kubernetes.default.svc.cluster.local localhost >/dev/null -port=8080 ",
+               "pid" : "4733",
+               "comm" : "exechealthz",
+               "threads" : "6",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;3419" : {
+            "Counters" : {},
+            "Metadata" : {
+               "comm" : "supervisord",
+               "threads" : "1",
+               "ppid" : "1",
+               "cmdline" : "/usr/bin/python /usr/bin/supervisord -c /etc/supervisor/supervisord.conf ",
+               "pid" : "3419",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;16" : {
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "1",
+               "comm" : "ksmd",
+               "pid" : "16",
+               "ppid" : "2"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;32310" : {
+            "Metadata" : {
+               "cmdline" : "sleep 10 ",
+               "ppid" : "3435",
+               "pid" : "32310",
+               "comm" : "sleep",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;30" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process",
+               "pid" : "30",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "kthrotld"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;21" : {
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "kblockd",
+               "pid" : "21",
+               "ppid" : "2",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;20" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "comm" : "bioset",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "20"
+            }
+         },
+         "kubernetes-minion-1lle;3418" : {
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "getty",
+               "threads" : "1",
+               "ppid" : "1",
+               "cmdline" : "/sbin/getty 38400 tty3 ",
+               "pid" : "3418"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;4138" : {
+            "Metadata" : {
+               "cmdline" : "/pause ",
+               "pid" : "4138",
+               "comm" : "pause",
+               "threads" : "3",
+               "topology" : "process",
+               "ppid" : "3935",
+               "docker_container_id" : "c982a60ee2259b52c2247ba9524d1806a9417101313cac5bd6ae31903b82ae4f",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;11" : {
+            "Counters" : {},
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "khelper",
+               "pid" : "11",
+               "ppid" : "2",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;2" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "pid" : "2",
+               "threads" : "1",
+               "comm" : "kthreadd"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;3433" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "ppid" : "3419",
+               "cmdline" : "/bin/bash /usr/sbin/kubelet-checker.sh ",
+               "pid" : "3433",
+               "comm" : "kubelet-checker",
+               "threads" : "1"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;4112" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "docker_container_id" : "3d1a0c636c69d73d035b6b40b4d794502b3abb3ba6823e1475a394be184ea58f",
+               "ppid" : "3935",
+               "topology" : "process",
+               "comm" : "pause",
+               "threads" : "3",
+               "cmdline" : "/pause ",
+               "pid" : "4112"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;8" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "1",
+               "comm" : "rcu_bh",
+               "pid" : "8",
+               "ppid" : "2"
+            }
+         },
+         "kubernetes-minion-1lle;3421" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "getty",
+               "threads" : "1",
+               "ppid" : "1",
+               "cmdline" : "/sbin/getty 38400 tty6 ",
+               "pid" : "3421"
+            }
+         },
+         "kubernetes-minion-wr4o;3994" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "ppid" : "3943",
+               "docker_container_id" : "6c07871fe79f6ebd26d478af711b7aae5796a8d8275f67b20f1b1e2331aaf332",
+               "topology" : "process",
+               "cmdline" : "/pause ",
+               "pid" : "3994",
+               "comm" : "pause",
+               "threads" : "3"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;3475" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "kubelet",
+               "threads" : "9",
+               "ppid" : "1",
+               "cmdline" : "/usr/local/bin/kubelet --api-servers=https://kubernetes-master --enable-debugging-handlers=true --cloud-provider=gce --config=/etc/kubernetes/manifests --allow-privileged=False --v=2 --cluster-dns=10.0.0.10 --cluster-domain=cluster.local --configure-cbr0=true --cgroup-root=/ --system-container=/system ",
+               "pid" : "3475"
+            }
+         },
+         "kubernetes-minion-wr4o;2339" : {
+            "Metadata" : {
+               "cmdline" : "/usr/bin/python /usr/share/google/google_daemon/manage_accounts.py --daemon ",
+               "ppid" : "1",
+               "pid" : "2339",
+               "comm" : "manage_accounts",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;24707" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "ppid" : "3943",
+               "docker_container_id" : "5efffbb86f589d045d7a18559efc168cde2bcd736489c214bd383e374cf55cef",
+               "topology" : "process",
+               "pid" : "24707",
+               "cmdline" : "/sbin/runsvdir /etc/service ",
+               "threads" : "1",
+               "comm" : "runsvdir"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;3" : {
+            "Metadata" : {
+               "comm" : "ksoftirqd/0",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "3",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;9" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process",
+               "pid" : "9",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "migration/0"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;3434" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "pid" : "3434",
+               "ppid" : "3419",
+               "cmdline" : "/bin/bash /usr/sbin/docker-checker.sh ",
+               "threads" : "1",
+               "comm" : "docker-checker."
+            }
+         },
+         "kubernetes-minion-wr4o;13" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "pid" : "13",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "netns"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;12" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "pid" : "12",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "kdevtmpfs"
+            }
+         },
+         "kubernetes-minion-1lle;31" : {
+            "Counters" : {},
+            "Metadata" : {
+               "comm" : "ipv6_addrconf",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "31",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         "kubernetes-minion-1lle;5" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process",
+               "pid" : "5",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "kworker/0:0H"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;127" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "comm" : "scsi_eh_0",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "127"
+            }
+         },
+         "kubernetes-minion-1lle;3416" : {
+            "Counters" : {},
+            "Metadata" : {
+               "ppid" : "1",
+               "cmdline" : "/sbin/getty 38400 tty1 ",
+               "pid" : "3416",
+               "comm" : "getty",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-1lle;19738" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "comm" : "runsvdir",
+               "threads" : "1",
+               "cmdline" : "/sbin/runsvdir /etc/service ",
+               "pid" : "19738",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "ppid" : "3935",
+               "docker_container_id" : "ab7f3494f3c4266de793f0b6618044bdf903bcea1806df102ec56a11227b2b15"
+            }
+         },
+         "kubernetes-minion-wr4o;32085" : {
+            "Counters" : {},
+            "Metadata" : {
+               "threads" : "1",
+               "comm" : "sleep",
+               "pid" : "32085",
+               "cmdline" : "sleep 10 ",
+               "ppid" : "3433",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;15" : {
+            "Metadata" : {
+               "comm" : "writeback",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "15",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;139" : {
+            "Counters" : {},
+            "Metadata" : {
+               "comm" : "kworker/0:1H",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "139",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;33" : {
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "comm" : "deferwq",
+               "threads" : "1",
+               "ppid" : "2",
+               "pid" : "33"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;32080" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "1",
+               "comm" : "sleep",
+               "pid" : "32080",
+               "ppid" : "3435",
+               "cmdline" : "sleep 10 "
+            }
+         },
+         "kubernetes-minion-wr4o;3425" : {
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "1",
+               "comm" : "getty",
+               "pid" : "3425",
+               "ppid" : "1",
+               "cmdline" : "/sbin/getty 38400 tty3 "
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;206" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "ppid" : "2",
+               "pid" : "206",
+               "comm" : "ext4-rsv-conver",
+               "threads" : "1"
+            }
+         },
+         "kubernetes-minion-1lle;12" : {
+            "Counters" : {},
+            "Metadata" : {
+               "ppid" : "2",
+               "pid" : "12",
+               "comm" : "kdevtmpfs",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-wr4o;31968" : {
+            "Counters" : {},
+            "Metadata" : {
+               "comm" : "sleep",
+               "threads" : "1",
+               "cmdline" : "sleep 10 ",
+               "ppid" : "3434",
+               "pid" : "31968",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;10" : {
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "threads" : "1",
+               "comm" : "watchdog/0",
+               "pid" : "10",
+               "ppid" : "2"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;4583" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "ppid" : "3943",
+               "docker_container_id" : "fb2ecbc0fe96e3f9a16918198411ba5559a85a8b12d27ed91f3caa51247b592d",
+               "topology" : "process",
+               "threads" : "7",
+               "comm" : "skydns",
+               "pid" : "4583",
+               "cmdline" : "/skydns -machines=http://localhost:4001 -addr=0.0.0.0:53 -domain=cluster.local. "
+            }
+         },
+         "kubernetes-minion-1lle;20" : {
+            "Metadata" : {
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "threads" : "1",
+               "comm" : "bioset",
+               "pid" : "20",
+               "ppid" : "2"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;12847" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process",
+               "pid" : "12847",
+               "cmdline" : "sleep 10 ",
+               "ppid" : "3426",
+               "threads" : "1",
+               "comm" : "sleep"
+            }
+         },
+         "kubernetes-minion-wr4o;9" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "pid" : "9",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "migration/0"
+            }
+         },
+         "kubernetes-minion-wr4o;4550" : {
+            "Counters" : {},
+            "Metadata" : {
+               "ppid" : "4528",
+               "docker_container_id" : "c0b02922f015ab36a1657ccfb0e3fab037631c06ef884abf60a9bf6e18fe925e",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "cmdline" : "/opt/google-fluentd/embedded/bin/ruby /usr/sbin/google-fluentd -qq ",
+               "pid" : "4550",
+               "comm" : "google-fluentd",
+               "threads" : "14",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-wr4o;1" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "cmdline" : "init [2]   ",
+               "pid" : "1",
+               "comm" : "init",
+               "threads" : "1"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;11584" : {
+            "Counters" : {},
+            "Metadata" : {
+               "ppid" : "2",
+               "pid" : "11584",
+               "comm" : "kworker/0:1",
+               "threads" : "1",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            }
+         },
+         "kubernetes-minion-1lle;3935" : {
+            "Counters" : {},
+            "Metadata" : {
+               "threads" : "48",
+               "comm" : "docker",
+               "pid" : "3935",
+               "ppid" : "1",
+               "cmdline" : "/usr/bin/docker -d -p /var/run/docker.pid --bridge=cbr0 --iptables=false --ip-masq=false ",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         "kubernetes-minion-1lle;5141" : {
+            "Metadata" : {
+               "docker_container_id" : "c6f19b5807dfb6830fb7bbb73ae94bfb9a9aed4613f5f4ba4dbe67e52fe419d1",
+               "ppid" : "3935",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "cmdline" : "/kuisp -p 8080 -c /opt/grafana/config.js.tmpl=/opt/grafana/config.js -s /db/=${INFLUXDB_PROTO}://${INFLUXDB_HOST}:${INFLUXDB_PORT}/db/ ",
+               "pid" : "5141",
+               "comm" : "kuisp",
+               "threads" : "4",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;4485" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "docker_container_id" : "e32fac145bfb04e3abd8573d9be61f85f104b1793f6a17271ff04cc006f8210c",
+               "ppid" : "4481",
+               "topology" : "process",
+               "cmdline" : "/opt/google-fluentd/embedded/bin/ruby /usr/sbin/google-fluentd -qq ",
+               "pid" : "4485",
+               "comm" : "google-fluentd",
+               "threads" : "14"
+            }
+         },
+         "kubernetes-minion-wr4o;24727" : {
+            "Metadata" : {
+               "topology" : "process",
+               "pid" : "24727",
+               "cmdline" : "runsv app ",
+               "threads" : "1",
+               "comm" : "runsv",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "docker_container_id" : "5efffbb86f589d045d7a18559efc168cde2bcd736489c214bd383e374cf55cef",
+               "ppid" : "24707"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;30" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process",
+               "pid" : "30",
+               "ppid" : "2",
+               "threads" : "1",
+               "comm" : "kthrotld"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;1869" : {
+            "Metadata" : {
+               "threads" : "4",
+               "comm" : "rsyslogd",
+               "pid" : "1869",
+               "ppid" : "1",
+               "cmdline" : "/usr/sbin/rsyslogd -c5 ",
+               "topology" : "process",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;351" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "process",
+               "pid" : "351",
+               "cmdline" : "udevd --daemon ",
+               "ppid" : "1",
+               "threads" : "1",
+               "comm" : "udevd"
+            }
+         },
+         "kubernetes-minion-wr4o;2357" : {
+            "Metadata" : {
+               "pid" : "2357",
+               "cmdline" : "/usr/bin/python /usr/share/google/google_daemon/manage_addresses.py ",
+               "ppid" : "1",
+               "threads" : "1",
+               "comm" : "manage_addresse",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "process"
+            },
+            "Counters" : {}
+         }
+      }
+   },
+   "Address" : {
+      "NodeMetadatas" : {
+         "kubernetes-minion-wr4o;10.244.1.1" : {
+            "Counters" : {},
+            "Metadata" : {
+               "addr" : "10.244.1.1",
+               "topology" : "address",
+               "name" : "kubernetes-minion-wr4o",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-1lle;10.244.0.2" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "address",
+               "name" : "kubernetes-minion-1lle",
+               "addr" : "10.244.0.2"
+            }
+         },
+         ";10.240.211.140" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "name" : "kubernetes-minion-1lle",
+               "topology" : "address",
+               "addr" : "10.240.211.140"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;10.244.1.4" : {
+            "Metadata" : {
+               "name" : "kubernetes-minion-wr4o",
+               "topology" : "address",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "addr" : "10.244.1.4"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;10.244.1.3" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "name" : "kubernetes-minion-wr4o",
+               "topology" : "address",
+               "addr" : "10.244.1.3"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;10.244.0.3" : {
+            "Metadata" : {
+               "addr" : "10.244.0.3",
+               "name" : "kubernetes-minion-1lle",
+               "topology" : "address",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;10.244.0.1" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "name" : "kubernetes-minion-1lle",
+               "topology" : "address",
+               "addr" : "10.244.0.1"
+            }
+         },
+         ";10.240.78.198" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "address",
+               "name" : "kubernetes-minion-wr4o",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "addr" : "10.240.78.198"
+            }
+         },
+         "kubernetes-minion-wr4o;127.0.0.1" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "address",
+               "name" : "kubernetes-minion-wr4o",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "addr" : "127.0.0.1"
+            }
+         }
+      },
+      "Adjacency" : {
+         ">kubernetes-minion-wr4o;10.244.1.4" : [
+            ";10.0.0.1"
+         ],
+         ">;10.240.211.140" : [
+            ";10.240.28.126",
+            ";169.254.169.254"
+         ],
+         ">kubernetes-minion-1lle;10.244.0.1" : [
+            "kubernetes-minion-1lle;10.244.0.3"
+         ],
+         ">kubernetes-minion-1lle;10.244.0.2" : [
+            ";74.125.71.95"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.1" : [
+            "kubernetes-minion-wr4o;10.244.1.3",
+            "kubernetes-minion-wr4o;10.244.1.4"
+         ],
+         ">;10.240.78.198" : [
+            ";10.240.28.126",
+            ";169.254.169.254"
+         ],
+         ">kubernetes-minion-wr4o;127.0.0.1" : [
+            "kubernetes-minion-wr4o;127.0.0.1"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.3" : [
+            ";10.0.0.1",
+            ";169.254.169.254"
+         ]
+      },
+      "EdgeMetadatas" : {
+         ";10.240.78.198|;169.254.169.254" : {
+            "max_conn_count_tcp" : 4
+         },
+         "kubernetes-minion-1lle;10.244.0.1|kubernetes-minion-1lle;10.244.0.3" : {
+            "max_conn_count_tcp" : 2
+         },
+         "kubernetes-minion-1lle;10.244.0.2|;74.125.71.95" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.1|kubernetes-minion-wr4o;10.244.1.4" : {
+            "max_conn_count_tcp" : 6
+         },
+         ";10.240.211.140|;169.254.169.254" : {
+            "max_conn_count_tcp" : 4
+         },
+         ";10.240.78.198|;10.240.28.126" : {
+            "max_conn_count_tcp" : 16
+         },
+         ";10.240.211.140|;10.240.28.126" : {
+            "max_conn_count_tcp" : 8
+         },
+         "kubernetes-minion-wr4o;10.244.1.4|;10.0.0.1" : {
+            "max_conn_count_tcp" : 4
+         },
+         "kubernetes-minion-wr4o;10.244.1.1|kubernetes-minion-wr4o;10.244.1.3" : {
+            "max_conn_count_tcp" : 4
+         },
+         "kubernetes-minion-wr4o;127.0.0.1|kubernetes-minion-wr4o;127.0.0.1" : {
+            "max_conn_count_tcp" : 8
+         },
+         "kubernetes-minion-wr4o;10.244.1.3|;169.254.169.254" : {
+            "max_conn_count_tcp" : 2
+         },
+         "kubernetes-minion-wr4o;10.244.1.3|;10.0.0.1" : {
+            "max_conn_count_tcp" : 4
+         }
+      }
+   },
+   "Sampling" : {
+      "Total" : 0,
+      "Count" : 0
+   },
+   "Overlay" : {
+      "EdgeMetadatas" : {},
+      "Adjacency" : {},
+      "NodeMetadatas" : {}
+   },
+   "Kubernetes" : {
+      "NodeMetadatas" : {},
+      "EdgeMetadatas" : {},
+      "Adjacency" : {}
+   },
+   "Container" : {
+      "NodeMetadatas" : {
+         "kubernetes-minion-1lle;c982a60ee2259b52c2247ba9524d1806a9417101313cac5bd6ae31903b82ae4f" : {
+            "Metadata" : {
+               "memory_failcnt" : "0",
+               "network_rx_packets" : "30",
+               "network_tx_bytes" : "2663",
+               "network_tx_errors" : "0",
+               "topology" : "container",
+               "cpu_usage_in_kernelmode" : "0",
+               "network_rx_dropped" : "0",
+               "network_tx_packets" : "29",
+               "network_rx_bytes" : "3638",
+               "docker_container_command" : "/pause ",
+               "docker_container_id" : "c982a60ee2259b52c2247ba9524d1806a9417101313cac5bd6ae31903b82ae4f",
+               "cpu_system_cpu_usage" : "4194480000000",
+               "memory_usage" : "1138688",
+               "docker_container_ports" : "0.0.0.0:8086->8086/tcp, 0.0.0.0:8083->8083/tcp",
+               "docker_container_name" : "k8s_POD.c5371ceb_monitoring-influx-grafana-v1-v28px_kube-system_c8403551-4c95-11e5-b1ef-42010af01c7e_ea5661d2",
+               "cpu_total_usage" : "23181121",
+               "network_tx_dropped" : "0",
+               "cpu_usage_in_usermode" : "20000000",
+               "docker_container_ips" : "10.244.0.4",
+               "docker_image_id" : "2c40b0526b6358710fd09e7b8c022429268cc61703b4777e528ac9d469a07ca1",
+               "memory_max_usage" : "1191936",
+               "network_rx_errors" : "0",
+               "memory_limit" : "3892027392",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "docker_container_created" : "27 Aug 15 08:30 UTC"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;c6f19b5807dfb6830fb7bbb73ae94bfb9a9aed4613f5f4ba4dbe67e52fe419d1" : {
+            "Counters" : {},
+            "Metadata" : {
+               "cpu_usage_in_usermode" : "20000000",
+               "network_tx_dropped" : "0",
+               "memory_usage" : "839680",
+               "docker_container_ports" : "",
+               "docker_container_name" : "k8s_grafana.8d6d4ac8_monitoring-influx-grafana-v1-v28px_kube-system_c8403551-4c95-11e5-b1ef-42010af01c7e_6be24a67",
+               "cpu_total_usage" : "31243308",
+               "docker_container_ips" : "",
+               "memory_limit" : "104857600",
+               "network_rx_errors" : "0",
+               "docker_image_id" : "22182f122d461ef2e96af4c2ac1ebfbccf127894da9e9ceb56f7d74496583b30",
+               "memory_max_usage" : "1085440",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "docker_container_created" : "27 Aug 15 08:31 UTC",
+               "network_rx_packets" : "0",
+               "network_tx_bytes" : "0",
+               "memory_failcnt" : "0",
+               "network_rx_dropped" : "0",
+               "network_tx_packets" : "0",
+               "topology" : "container",
+               "network_tx_errors" : "0",
+               "cpu_usage_in_kernelmode" : "10000000",
+               "docker_container_id" : "c6f19b5807dfb6830fb7bbb73ae94bfb9a9aed4613f5f4ba4dbe67e52fe419d1",
+               "network_rx_bytes" : "0",
+               "docker_container_command" : "/kuisp -p 8080 -c /opt/grafana/config.js.tmpl=/opt/grafana/config.js -s /db/=${INFLUXDB_PROTO}://${INFLUXDB_HOST}:${INFLUXDB_PORT}/db/",
+               "cpu_system_cpu_usage" : "4194480000000"
+            }
+         },
+         "kubernetes-minion-1lle;e32fac145bfb04e3abd8573d9be61f85f104b1793f6a17271ff04cc006f8210c" : {
+            "Metadata" : {
+               "topology" : "container",
+               "cpu_usage_in_kernelmode" : "2830000000",
+               "network_tx_errors" : "0",
+               "network_rx_dropped" : "0",
+               "network_tx_packets" : "0",
+               "memory_failcnt" : "0",
+               "network_tx_bytes" : "0",
+               "network_rx_packets" : "0",
+               "cpu_system_cpu_usage" : "4194480000000",
+               "network_rx_bytes" : "0",
+               "docker_container_command" : "/bin/sh -c /usr/sbin/google-fluentd \"$FLUENTD_ARGS\" > /var/log/google-fluentd.log",
+               "docker_container_id" : "e32fac145bfb04e3abd8573d9be61f85f104b1793f6a17271ff04cc006f8210c",
+               "docker_container_ips" : "",
+               "cpu_total_usage" : "33679985233",
+               "docker_container_name" : "k8s_fluentd-cloud-logging.ac69000c_fluentd-cloud-logging-kubernetes-minion-1lle_kube-system_7f447c01cb7692b4adf16d5e3b0ed1ec_6e750304",
+               "memory_usage" : "75784192",
+               "docker_container_ports" : "",
+               "network_tx_dropped" : "0",
+               "cpu_usage_in_usermode" : "28380000000",
+               "docker_container_created" : "27 Aug 15 08:30 UTC",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "memory_max_usage" : "75964416",
+               "docker_image_id" : "b6e57ec0903bf894c2703e1ea70434b86f2503258b60ed4ad0dbf52388afdef1",
+               "memory_limit" : "209715200",
+               "network_rx_errors" : "0"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;660c9696b58e96bfbf6506b11f6f4f59fc739db6d9f4d774f6ca48377213cfb0" : {
+            "Metadata" : {
+               "docker_container_name" : "k8s_POD.6e934112_kube-dns-v8-cr1zp_kube-system_c8408075-4c95-11e5-b1ef-42010af01c7e_0564be4e",
+               "cpu_total_usage" : "19756332",
+               "memory_usage" : "1138688",
+               "docker_container_ports" : "",
+               "cpu_usage_in_usermode" : "20000000",
+               "network_tx_dropped" : "0",
+               "docker_container_ips" : "10.244.1.4",
+               "memory_max_usage" : "1699840",
+               "docker_image_id" : "2c40b0526b6358710fd09e7b8c022429268cc61703b4777e528ac9d469a07ca1",
+               "network_rx_errors" : "0",
+               "memory_limit" : "3892027392",
+               "docker_container_created" : "27 Aug 15 08:30 UTC",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "memory_failcnt" : "0",
+               "network_tx_bytes" : "14005496",
+               "network_rx_packets" : "100469",
+               "topology" : "container",
+               "cpu_usage_in_kernelmode" : "0",
+               "network_tx_errors" : "0",
+               "network_tx_packets" : "100111",
+               "network_rx_dropped" : "0",
+               "docker_container_command" : "/pause ",
+               "network_rx_bytes" : "12987830",
+               "docker_container_id" : "660c9696b58e96bfbf6506b11f6f4f59fc739db6d9f4d774f6ca48377213cfb0",
+               "cpu_system_cpu_usage" : "4167340000000"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;5efd99755a475c65645734179d3e4cd74c4dded2f533dd0d1b5a78bb8b42a8b7" : {
+            "Counters" : {},
+            "Metadata" : {
+               "network_rx_errors" : "0",
+               "memory_limit" : "3892027392",
+               "docker_image_id" : "2c40b0526b6358710fd09e7b8c022429268cc61703b4777e528ac9d469a07ca1",
+               "memory_max_usage" : "1695744",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "docker_container_created" : "27 Aug 15 08:30 UTC",
+               "network_tx_dropped" : "0",
+               "cpu_usage_in_usermode" : "10000000",
+               "memory_usage" : "1380352",
+               "docker_container_ports" : "",
+               "docker_container_name" : "k8s_POD.7be6d81d_fluentd-cloud-logging-kubernetes-minion-1lle_kube-system_7f447c01cb7692b4adf16d5e3b0ed1ec_5451e599",
+               "cpu_total_usage" : "24267066",
+               "docker_container_ips" : "10.244.0.2",
+               "docker_container_id" : "5efd99755a475c65645734179d3e4cd74c4dded2f533dd0d1b5a78bb8b42a8b7",
+               "network_rx_bytes" : "9742793",
+               "docker_container_command" : "/pause ",
+               "cpu_system_cpu_usage" : "4194480000000",
+               "network_rx_packets" : "32957",
+               "network_tx_bytes" : "10848537",
+               "memory_failcnt" : "0",
+               "network_tx_packets" : "34901",
+               "network_rx_dropped" : "0",
+               "cpu_usage_in_kernelmode" : "0",
+               "topology" : "container",
+               "network_tx_errors" : "0"
+            }
+         },
+         "kubernetes-minion-1lle;f825219bca0039ab67a1f2c68eedd6772bd7a8f39586850563c02abe80a97853" : {
+            "Counters" : {},
+            "Metadata" : {
+               "memory_usage" : "905216",
+               "docker_container_ports" : "",
+               "docker_container_name" : "k8s_kube-ui.c05459e5_kube-ui-v1-wcid1_kube-system_c83ff04e-4c95-11e5-b1ef-42010af01c7e_4fd82800",
+               "cpu_total_usage" : "144891793",
+               "network_tx_dropped" : "0",
+               "cpu_usage_in_usermode" : "60000000",
+               "docker_container_ips" : "",
+               "docker_image_id" : "c144d89158dc68fe09f4fb2e2dc66c4d8a6b67fd70e4570ffa0ef0df905c4f29",
+               "memory_max_usage" : "1032192",
+               "network_rx_errors" : "0",
+               "memory_limit" : "52428800",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "docker_container_created" : "27 Aug 15 08:30 UTC",
+               "memory_failcnt" : "0",
+               "network_rx_packets" : "0",
+               "network_tx_bytes" : "0",
+               "cpu_usage_in_kernelmode" : "30000000",
+               "topology" : "container",
+               "network_tx_errors" : "0",
+               "network_rx_dropped" : "0",
+               "network_tx_packets" : "0",
+               "network_rx_bytes" : "0",
+               "docker_container_command" : "/kube-ui ",
+               "docker_container_id" : "f825219bca0039ab67a1f2c68eedd6772bd7a8f39586850563c02abe80a97853",
+               "cpu_system_cpu_usage" : "4194480000000"
+            }
+         },
+         "kubernetes-minion-wr4o;faee44799c2edf05fdebfc50dd32834472552edaf202cd72ef88036212ba00bc" : {
+            "Metadata" : {
+               "cpu_total_usage" : "21945325",
+               "docker_container_name" : "k8s_heapster.b398248a_monitoring-heapster-v8-puag7_kube-system_c828f7fe-4c95-11e5-b1ef-42010af01c7e_e446b840",
+               "docker_container_ports" : "",
+               "memory_usage" : "1748992",
+               "network_tx_dropped" : "0",
+               "cpu_usage_in_usermode" : "20000000",
+               "docker_container_ips" : "",
+               "memory_max_usage" : "1748992",
+               "docker_image_id" : "0fc71b689ea8de4c00395022dfb69635e9fd4d170a569269f0b1939b74bf308b",
+               "memory_limit" : "314572800",
+               "network_rx_errors" : "0",
+               "docker_container_created" : "27 Aug 15 09:38 UTC",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "memory_failcnt" : "0",
+               "network_tx_bytes" : "0",
+               "network_rx_packets" : "0",
+               "cpu_usage_in_kernelmode" : "10000000",
+               "topology" : "container",
+               "network_tx_errors" : "0",
+               "network_rx_dropped" : "0",
+               "network_tx_packets" : "0",
+               "docker_container_command" : "/heapster --source=kubernetes:'' --sink=gcl --sink=gcmautoscaling --sink=influxdb:http://monitoring-influxdb:8086 --poll_duration=2m --stats_resolution=1m",
+               "network_rx_bytes" : "0",
+               "docker_container_id" : "faee44799c2edf05fdebfc50dd32834472552edaf202cd72ef88036212ba00bc",
+               "cpu_system_cpu_usage" : "4180270000000"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;3d1a0c636c69d73d035b6b40b4d794502b3abb3ba6823e1475a394be184ea58f" : {
+            "Counters" : {},
+            "Metadata" : {
+               "docker_container_ips" : "10.244.0.3",
+               "cpu_total_usage" : "21750983",
+               "docker_container_name" : "k8s_POD.9db2f941_kube-ui-v1-wcid1_kube-system_c83ff04e-4c95-11e5-b1ef-42010af01c7e_a88bb483",
+               "memory_usage" : "1142784",
+               "docker_container_ports" : "",
+               "cpu_usage_in_usermode" : "10000000",
+               "network_tx_dropped" : "0",
+               "docker_container_created" : "27 Aug 15 08:30 UTC",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "memory_max_usage" : "1269760",
+               "docker_image_id" : "2c40b0526b6358710fd09e7b8c022429268cc61703b4777e528ac9d469a07ca1",
+               "network_rx_errors" : "0",
+               "memory_limit" : "3892027392",
+               "cpu_usage_in_kernelmode" : "10000000",
+               "topology" : "container",
+               "network_tx_errors" : "0",
+               "network_tx_packets" : "417",
+               "network_rx_dropped" : "0",
+               "memory_failcnt" : "0",
+               "network_tx_bytes" : "1143377",
+               "network_rx_packets" : "822",
+               "cpu_system_cpu_usage" : "4194480000000",
+               "docker_container_command" : "/pause ",
+               "network_rx_bytes" : "93513",
+               "docker_container_id" : "3d1a0c636c69d73d035b6b40b4d794502b3abb3ba6823e1475a394be184ea58f"
+            }
+         },
+         "kubernetes-minion-wr4o;446ec349b5c18ab70b4a0cc823da3bafe7bf0536c7ca3d853c88b4dbb25d5da5" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "container",
+               "cpu_usage_in_kernelmode" : "0",
+               "network_tx_errors" : "0",
+               "network_rx_dropped" : "0",
+               "network_tx_packets" : "0",
+               "memory_failcnt" : "0",
+               "network_tx_bytes" : "0",
+               "network_rx_packets" : "0",
+               "cpu_system_cpu_usage" : "4170350000000",
+               "docker_container_command" : "/heapster --source=kubernetes:'' --sink=gcl --sink=gcmautoscaling --sink=influxdb:http://monitoring-influxdb:8086 --poll_duration=2m --stats_resolution=1m",
+               "network_rx_bytes" : "0",
+               "docker_container_id" : "446ec349b5c18ab70b4a0cc823da3bafe7bf0536c7ca3d853c88b4dbb25d5da5",
+               "docker_container_ips" : "",
+               "cpu_total_usage" : "18578982",
+               "docker_container_name" : "k8s_heapster.b398248a_monitoring-heapster-v8-puag7_kube-system_c828f7fe-4c95-11e5-b1ef-42010af01c7e_8285c8f2",
+               "memory_usage" : "827392",
+               "docker_container_ports" : "",
+               "cpu_usage_in_usermode" : "10000000",
+               "network_tx_dropped" : "0",
+               "docker_container_created" : "27 Aug 15 09:38 UTC",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "memory_max_usage" : "917504",
+               "docker_image_id" : "0fc71b689ea8de4c00395022dfb69635e9fd4d170a569269f0b1939b74bf308b",
+               "memory_limit" : "314572800",
+               "network_rx_errors" : "0"
+            }
+         },
+         "kubernetes-minion-wr4o;6c07871fe79f6ebd26d478af711b7aae5796a8d8275f67b20f1b1e2331aaf332" : {
+            "Metadata" : {
+               "memory_failcnt" : "0",
+               "network_rx_packets" : "56558",
+               "network_tx_bytes" : "22278344",
+               "cpu_usage_in_kernelmode" : "10000000",
+               "topology" : "container",
+               "network_tx_errors" : "0",
+               "network_tx_packets" : "60143",
+               "network_rx_dropped" : "0",
+               "network_rx_bytes" : "16771910",
+               "docker_container_command" : "/pause ",
+               "docker_container_id" : "6c07871fe79f6ebd26d478af711b7aae5796a8d8275f67b20f1b1e2331aaf332",
+               "cpu_system_cpu_usage" : "4167340000000",
+               "docker_container_ports" : "",
+               "memory_usage" : "1380352",
+               "docker_container_name" : "k8s_POD.7be6d81d_fluentd-cloud-logging-kubernetes-minion-wr4o_kube-system_7f447c01cb7692b4adf16d5e3b0ed1ec_8b5438e8",
+               "cpu_total_usage" : "22862511",
+               "cpu_usage_in_usermode" : "10000000",
+               "network_tx_dropped" : "0",
+               "docker_container_ips" : "10.244.1.2",
+               "docker_image_id" : "2c40b0526b6358710fd09e7b8c022429268cc61703b4777e528ac9d469a07ca1",
+               "memory_max_usage" : "1507328",
+               "memory_limit" : "3892027392",
+               "network_rx_errors" : "0",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "docker_container_created" : "27 Aug 15 08:30 UTC"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;ab7f3494f3c4266de793f0b6618044bdf903bcea1806df102ec56a11227b2b15" : {
+            "Metadata" : {
+               "cpu_usage_in_usermode" : "210180000000",
+               "network_tx_dropped" : "0",
+               "cpu_total_usage" : "282040627120",
+               "docker_container_name" : "weavescope",
+               "docker_container_ports" : "",
+               "memory_usage" : "52391936",
+               "docker_container_ips" : "",
+               "network_rx_errors" : "0",
+               "memory_limit" : "3892027392",
+               "memory_max_usage" : "58089472",
+               "docker_image_id" : "af296e56f2fc62d6f2cf8a8dee6049e937f4a7aaee6065c1cba7adf35fe0e85d",
+               "docker_container_created" : "27 Aug 15 08:47 UTC",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "network_tx_bytes" : "0",
+               "network_rx_packets" : "0",
+               "memory_failcnt" : "0",
+               "network_tx_packets" : "0",
+               "network_rx_dropped" : "0",
+               "topology" : "container",
+               "network_tx_errors" : "0",
+               "cpu_usage_in_kernelmode" : "83960000000",
+               "docker_container_id" : "ab7f3494f3c4266de793f0b6618044bdf903bcea1806df102ec56a11227b2b15",
+               "network_rx_bytes" : "0",
+               "docker_container_command" : "/home/weave/entrypoint.sh --probe.docker true --probe.docker.bridge cbr0 kubernetes-master",
+               "cpu_system_cpu_usage" : "4194480000000"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;5efffbb86f589d045d7a18559efc168cde2bcd736489c214bd383e374cf55cef" : {
+            "Counters" : {},
+            "Metadata" : {
+               "docker_container_ips" : "",
+               "network_tx_dropped" : "0",
+               "cpu_usage_in_usermode" : "483460000000",
+               "memory_usage" : "56733696",
+               "docker_container_ports" : "",
+               "docker_container_name" : "weavescope",
+               "cpu_total_usage" : "579018798642",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "docker_container_created" : "27 Aug 15 08:48 UTC",
+               "memory_limit" : "3892027392",
+               "network_rx_errors" : "0",
+               "docker_image_id" : "af296e56f2fc62d6f2cf8a8dee6049e937f4a7aaee6065c1cba7adf35fe0e85d",
+               "memory_max_usage" : "62832640",
+               "network_tx_packets" : "0",
+               "network_rx_dropped" : "0",
+               "topology" : "container",
+               "network_tx_errors" : "0",
+               "cpu_usage_in_kernelmode" : "108980000000",
+               "network_rx_packets" : "0",
+               "network_tx_bytes" : "0",
+               "memory_failcnt" : "0",
+               "cpu_system_cpu_usage" : "4167340000000",
+               "docker_container_id" : "5efffbb86f589d045d7a18559efc168cde2bcd736489c214bd383e374cf55cef",
+               "docker_container_command" : "/home/weave/entrypoint.sh --probe.docker true --probe.docker.bridge cbr0 kubernetes-master",
+               "network_rx_bytes" : "0"
+            }
+         },
+         "kubernetes-minion-wr4o;c0b02922f015ab36a1657ccfb0e3fab037631c06ef884abf60a9bf6e18fe925e" : {
+            "Metadata" : {
+               "network_rx_packets" : "0",
+               "network_tx_bytes" : "0",
+               "memory_failcnt" : "0",
+               "network_tx_packets" : "0",
+               "network_rx_dropped" : "0",
+               "network_tx_errors" : "0",
+               "topology" : "container",
+               "cpu_usage_in_kernelmode" : "4880000000",
+               "docker_container_id" : "c0b02922f015ab36a1657ccfb0e3fab037631c06ef884abf60a9bf6e18fe925e",
+               "docker_container_command" : "/bin/sh -c /usr/sbin/google-fluentd \"$FLUENTD_ARGS\" > /var/log/google-fluentd.log",
+               "network_rx_bytes" : "0",
+               "cpu_system_cpu_usage" : "4167340000000",
+               "cpu_usage_in_usermode" : "48960000000",
+               "network_tx_dropped" : "0",
+               "memory_usage" : "75493376",
+               "docker_container_ports" : "",
+               "cpu_total_usage" : "59052352864",
+               "docker_container_name" : "k8s_fluentd-cloud-logging.ac69000c_fluentd-cloud-logging-kubernetes-minion-wr4o_kube-system_7f447c01cb7692b4adf16d5e3b0ed1ec_9bcf7819",
+               "docker_container_ips" : "",
+               "memory_limit" : "209715200",
+               "network_rx_errors" : "0",
+               "docker_image_id" : "b6e57ec0903bf894c2703e1ea70434b86f2503258b60ed4ad0dbf52388afdef1",
+               "memory_max_usage" : "75640832",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "docker_container_created" : "27 Aug 15 08:30 UTC"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;270df08e8d8a3fad401eb6956c9f8fec3515618e5c9f2d9299a1d0d279f02b46" : {
+            "Metadata" : {
+               "memory_failcnt" : "0",
+               "network_tx_bytes" : "0",
+               "network_rx_packets" : "0",
+               "topology" : "container",
+               "cpu_usage_in_kernelmode" : "400000000",
+               "network_tx_errors" : "0",
+               "network_rx_dropped" : "0",
+               "network_tx_packets" : "0",
+               "docker_container_command" : "/exechealthz -cmd=nslookup kubernetes.default.svc.cluster.local localhost >/dev/null -port=8080",
+               "network_rx_bytes" : "0",
+               "docker_container_id" : "270df08e8d8a3fad401eb6956c9f8fec3515618e5c9f2d9299a1d0d279f02b46",
+               "cpu_system_cpu_usage" : "4167340000000",
+               "docker_container_name" : "k8s_healthz.324c0ead_kube-dns-v8-cr1zp_kube-system_c8408075-4c95-11e5-b1ef-42010af01c7e_0b055e4d",
+               "cpu_total_usage" : "2917940315",
+               "memory_usage" : "880640",
+               "docker_container_ports" : "",
+               "cpu_usage_in_usermode" : "240000000",
+               "network_tx_dropped" : "0",
+               "docker_container_ips" : "",
+               "memory_max_usage" : "1662976",
+               "docker_image_id" : "4f3d04b1d47b64834d494f9416d1f17a5f93a3e2035ad604fee47cfbba62be60",
+               "network_rx_errors" : "0",
+               "memory_limit" : "20971520",
+               "docker_container_created" : "27 Aug 15 08:30 UTC",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;3ee4dbb384e804a53e420872c7a931fee2987529eb1e9e0758e2f187635fd893" : {
+            "Metadata" : {
+               "network_tx_dropped" : "0",
+               "cpu_usage_in_usermode" : "40000000",
+               "memory_usage" : "2248704",
+               "docker_container_ports" : "",
+               "docker_container_name" : "k8s_kube2sky.5b90d691_kube-dns-v8-cr1zp_kube-system_c8408075-4c95-11e5-b1ef-42010af01c7e_9ca2c331",
+               "cpu_total_usage" : "388469203",
+               "docker_container_ips" : "",
+               "memory_limit" : "52428800",
+               "network_rx_errors" : "0",
+               "docker_image_id" : "e52a547dca17cd83e8b6022e8ae1c1883d0855bce2d1c30071ffa0dcb8a8caf6",
+               "memory_max_usage" : "2826240",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "docker_container_created" : "27 Aug 15 08:30 UTC",
+               "network_rx_packets" : "0",
+               "network_tx_bytes" : "0",
+               "memory_failcnt" : "0",
+               "network_rx_dropped" : "0",
+               "network_tx_packets" : "0",
+               "network_tx_errors" : "0",
+               "topology" : "container",
+               "cpu_usage_in_kernelmode" : "10000000",
+               "docker_container_id" : "3ee4dbb384e804a53e420872c7a931fee2987529eb1e9e0758e2f187635fd893",
+               "network_rx_bytes" : "0",
+               "docker_container_command" : "/kube2sky -domain=cluster.local",
+               "cpu_system_cpu_usage" : "4167340000000"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;fb2ecbc0fe96e3f9a16918198411ba5559a85a8b12d27ed91f3caa51247b592d" : {
+            "Counters" : {},
+            "Metadata" : {
+               "network_rx_packets" : "0",
+               "network_tx_bytes" : "0",
+               "memory_failcnt" : "0",
+               "network_rx_dropped" : "0",
+               "network_tx_packets" : "0",
+               "network_tx_errors" : "0",
+               "topology" : "container",
+               "cpu_usage_in_kernelmode" : "4950000000",
+               "docker_container_id" : "fb2ecbc0fe96e3f9a16918198411ba5559a85a8b12d27ed91f3caa51247b592d",
+               "network_rx_bytes" : "0",
+               "docker_container_command" : "/skydns -machines=http://localhost:4001 -addr=0.0.0.0:53 -domain=cluster.local.",
+               "cpu_system_cpu_usage" : "4167340000000",
+               "network_tx_dropped" : "0",
+               "cpu_usage_in_usermode" : "9780000000",
+               "memory_usage" : "2859008",
+               "docker_container_ports" : "",
+               "docker_container_name" : "k8s_skydns.e879a0a_kube-dns-v8-cr1zp_kube-system_c8408075-4c95-11e5-b1ef-42010af01c7e_b3a4a6d0",
+               "cpu_total_usage" : "16997422900",
+               "docker_container_ips" : "",
+               "memory_limit" : "52428800",
+               "network_rx_errors" : "0",
+               "docker_image_id" : "791ddf327076e0fd35a1125568a56c05ee1f1dfd7a165c74f4d489d8a5e65ac5",
+               "memory_max_usage" : "2985984",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "docker_container_created" : "27 Aug 15 08:30 UTC"
+            }
+         },
+         "kubernetes-minion-wr4o;dafb9d7a182321fff84388e24be5d012f2521777a1928941d3416549c45c0a86" : {
+            "Metadata" : {
+               "network_rx_packets" : "49752",
+               "network_tx_bytes" : "8698438",
+               "memory_failcnt" : "0",
+               "network_rx_dropped" : "0",
+               "network_tx_packets" : "57634",
+               "topology" : "container",
+               "cpu_usage_in_kernelmode" : "0",
+               "network_tx_errors" : "0",
+               "docker_container_id" : "dafb9d7a182321fff84388e24be5d012f2521777a1928941d3416549c45c0a86",
+               "network_rx_bytes" : "171116716",
+               "docker_container_command" : "/pause ",
+               "cpu_system_cpu_usage" : "4167340000000",
+               "network_tx_dropped" : "0",
+               "cpu_usage_in_usermode" : "10000000",
+               "docker_container_ports" : "",
+               "memory_usage" : "1138688",
+               "docker_container_name" : "k8s_POD.7be6d81d_monitoring-heapster-v8-puag7_kube-system_c828f7fe-4c95-11e5-b1ef-42010af01c7e_ee468720",
+               "cpu_total_usage" : "21799343",
+               "docker_container_ips" : "10.244.1.3",
+               "network_rx_errors" : "0",
+               "memory_limit" : "3892027392",
+               "docker_image_id" : "2c40b0526b6358710fd09e7b8c022429268cc61703b4777e528ac9d469a07ca1",
+               "memory_max_usage" : "1572864",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "docker_container_created" : "27 Aug 15 08:30 UTC"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;be34b8e0f1135b5764ff9944350c755dbc017659a48195399167cb9dc5646e2f" : {
+            "Counters" : {},
+            "Metadata" : {
+               "network_rx_errors" : "0",
+               "memory_limit" : "52428800",
+               "memory_max_usage" : "6295552",
+               "docker_image_id" : "b6b9a86dc06aa1361357ca1b105feba961f6a4145adca6c54e142c0be0fe87b0",
+               "docker_container_created" : "27 Aug 15 08:30 UTC",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "network_tx_dropped" : "0",
+               "cpu_usage_in_usermode" : "1940000000",
+               "docker_container_name" : "k8s_etcd.af3b2b58_kube-dns-v8-cr1zp_kube-system_c8408075-4c95-11e5-b1ef-42010af01c7e_9ea11b23",
+               "cpu_total_usage" : "7767940248",
+               "memory_usage" : "6168576",
+               "docker_container_ports" : "",
+               "docker_container_ips" : "",
+               "docker_container_id" : "be34b8e0f1135b5764ff9944350c755dbc017659a48195399167cb9dc5646e2f",
+               "network_rx_bytes" : "0",
+               "docker_container_command" : "/usr/local/bin/etcd -data-dir /var/etcd/data -listen-client-urls http://127.0.0.1:2379,http://127.0.0.1:4001 -advertise-client-urls http://127.0.0.1:2379,http://127.0.0.1:4001 -initial-cluster-token skydns-etcd",
+               "cpu_system_cpu_usage" : "4167340000000",
+               "network_tx_bytes" : "0",
+               "network_rx_packets" : "0",
+               "memory_failcnt" : "0",
+               "network_rx_dropped" : "0",
+               "network_tx_packets" : "0",
+               "topology" : "container",
+               "cpu_usage_in_kernelmode" : "670000000",
+               "network_tx_errors" : "0"
+            }
+         },
+         "kubernetes-minion-1lle;8749e1c05a636d20ae7c7d55fc347365fc216bd1fdff7bad55e8fa6ab4ab6956" : {
+            "Metadata" : {
+               "cpu_usage_in_kernelmode" : "20000000",
+               "topology" : "container",
+               "network_tx_errors" : "0",
+               "network_tx_packets" : "0",
+               "network_rx_dropped" : "0",
+               "memory_failcnt" : "0",
+               "network_rx_packets" : "0",
+               "network_tx_bytes" : "0",
+               "cpu_system_cpu_usage" : "4194480000000",
+               "docker_container_command" : "/run.sh ",
+               "network_rx_bytes" : "0",
+               "docker_container_id" : "8749e1c05a636d20ae7c7d55fc347365fc216bd1fdff7bad55e8fa6ab4ab6956",
+               "docker_container_ips" : "",
+               "memory_usage" : "2433024",
+               "docker_container_ports" : "",
+               "docker_container_name" : "k8s_influxdb.a21939e2_monitoring-influx-grafana-v1-v28px_kube-system_c8403551-4c95-11e5-b1ef-42010af01c7e_3b781d48",
+               "cpu_total_usage" : "594160882",
+               "network_tx_dropped" : "0",
+               "cpu_usage_in_usermode" : "400000000",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "docker_container_created" : "27 Aug 15 08:30 UTC",
+               "docker_image_id" : "514b330600afe3ed9f948f65fab7593b374075d194c65263fe3bafc43820fdad",
+               "memory_max_usage" : "3739648",
+               "memory_limit" : "209715200",
+               "network_rx_errors" : "0"
+            },
+            "Counters" : {}
+         }
+      },
+      "Adjacency" : {},
+      "EdgeMetadatas" : {}
+   },
+   "Endpoint" : {
+      "NodeMetadatas" : {
+         "kubernetes-minion-wr4o;10.244.1.1;60988" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "pid" : "3486",
+               "port" : "60988",
+               "addr" : "10.244.1.1"
+            }
+         },
+         "kubernetes-minion-1lle;10.244.0.1;36267" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "endpoint",
+               "port" : "36267",
+               "addr" : "10.244.0.1",
+               "pid" : "3475"
+            }
+         },
+         ";10.240.78.198;48808" : {
+            "Counters" : {},
+            "Metadata" : {
+               "pid" : "3484",
+               "addr" : "10.240.78.198",
+               "port" : "48808",
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         ";10.240.78.198;48847" : {
+            "Metadata" : {
+               "pid" : "3484",
+               "addr" : "10.240.78.198",
+               "port" : "48847",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;10.244.0.3;8080" : {
+            "Counters" : {},
+            "Metadata" : {
+               "addr" : "10.244.0.3",
+               "port" : "8080",
+               "pid" : "4267",
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         ";10.240.211.140;47499" : {
+            "Metadata" : {
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "pid" : "3475",
+               "addr" : "10.240.211.140",
+               "port" : "47499"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40938" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "addr" : "10.244.1.3",
+               "port" : "40938",
+               "pid" : "32391"
+            },
+            "Counters" : {}
+         },
+         ";10.240.211.140;37082" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "pid" : "12398",
+               "addr" : "10.240.211.140",
+               "port" : "37082"
+            }
+         },
+         ";10.240.78.198;47599" : {
+            "Metadata" : {
+               "port" : "47599",
+               "addr" : "10.240.78.198",
+               "pid" : "3484",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         ";10.240.78.198;43281" : {
+            "Metadata" : {
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "pid" : "3486",
+               "addr" : "10.240.78.198",
+               "port" : "43281"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40914" : {
+            "Metadata" : {
+               "port" : "40914",
+               "addr" : "10.244.1.3",
+               "pid" : "32158",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40915" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "addr" : "10.244.1.3",
+               "port" : "40915",
+               "pid" : "32158"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-1lle;10.244.0.2;52326" : {
+            "Metadata" : {
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "pid" : "4485",
+               "port" : "52326",
+               "addr" : "10.244.0.2"
+            },
+            "Counters" : {}
+         },
+         ";10.240.78.198;38830" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "pid" : "31471",
+               "addr" : "10.240.78.198",
+               "port" : "38830"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;10.244.1.4;8080" : {
+            "Metadata" : {
+               "addr" : "10.244.1.4",
+               "port" : "8080",
+               "pid" : "4733",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40911" : {
+            "Counters" : {},
+            "Metadata" : {
+               "port" : "40911",
+               "addr" : "10.244.1.3",
+               "pid" : "32158",
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;10.244.1.4;34484" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "pid" : "4465",
+               "addr" : "10.244.1.4",
+               "port" : "34484"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;127.0.0.1;46754" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "pid" : "4465",
+               "addr" : "127.0.0.1",
+               "port" : "46754"
+            }
+         },
+         ";10.240.78.198;47306" : {
+            "Metadata" : {
+               "pid" : "3486",
+               "addr" : "10.240.78.198",
+               "port" : "47306",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         ";10.240.211.140;52062" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "endpoint",
+               "addr" : "10.240.211.140",
+               "port" : "52062",
+               "pid" : "3473"
+            },
+            "Counters" : {}
+         },
+         ";10.240.78.198;48848" : {
+            "Counters" : {},
+            "Metadata" : {
+               "addr" : "10.240.78.198",
+               "port" : "48848",
+               "pid" : "3484",
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         ";10.240.78.198;42853" : {
+            "Metadata" : {
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "addr" : "10.240.78.198",
+               "port" : "42853",
+               "pid" : "3484"
+            },
+            "Counters" : {}
+         },
+         ";10.240.78.198;48823" : {
+            "Metadata" : {
+               "pid" : "3484",
+               "addr" : "10.240.78.198",
+               "port" : "48823",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         ";10.240.211.140;60767" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "endpoint",
+               "pid" : "3475",
+               "port" : "60767",
+               "addr" : "10.240.211.140"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;127.0.0.1;46772" : {
+            "Metadata" : {
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "pid" : "4465",
+               "addr" : "127.0.0.1",
+               "port" : "46772"
+            },
+            "Counters" : {}
+         },
+         ";10.240.78.198;48817" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "pid" : "3484",
+               "addr" : "10.240.78.198",
+               "port" : "48817"
+            }
+         },
+         ";10.240.78.198;43266" : {
+            "Metadata" : {
+               "pid" : "24729",
+               "port" : "43266",
+               "addr" : "10.240.78.198",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40936" : {
+            "Metadata" : {
+               "addr" : "10.244.1.3",
+               "port" : "40936",
+               "pid" : "32391",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         ";10.240.78.198;48842" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "addr" : "10.240.78.198",
+               "port" : "48842",
+               "pid" : "3484"
+            }
+         },
+         "kubernetes-minion-wr4o;10.244.1.4;39232" : {
+            "Counters" : {},
+            "Metadata" : {
+               "addr" : "10.244.1.4",
+               "port" : "39232",
+               "pid" : "4465",
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;35529" : {
+            "Counters" : {},
+            "Metadata" : {
+               "pid" : "32158",
+               "port" : "35529",
+               "addr" : "10.244.1.3",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            }
+         },
+         "kubernetes-minion-wr4o;127.0.0.1;46804" : {
+            "Metadata" : {
+               "pid" : "4583",
+               "addr" : "127.0.0.1",
+               "port" : "46804",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;127.0.0.1;4001" : {
+            "Metadata" : {
+               "port" : "4001",
+               "addr" : "127.0.0.1",
+               "pid" : "4237",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         ";10.240.78.198;37865" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "pid" : "3486",
+               "port" : "37865",
+               "addr" : "10.240.78.198"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40940" : {
+            "Counters" : {},
+            "Metadata" : {
+               "port" : "40940",
+               "addr" : "10.244.1.3",
+               "pid" : "32391",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            }
+         },
+         ";10.240.78.198;56133" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "pid" : "2367",
+               "port" : "56133",
+               "addr" : "10.240.78.198"
+            }
+         },
+         ";10.240.78.198;47601" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "port" : "47601",
+               "addr" : "10.240.78.198",
+               "pid" : "3484"
+            },
+            "Counters" : {}
+         },
+         ";10.240.78.198;35528" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "pid" : "32158",
+               "addr" : "10.244.1.3",
+               "port" : "35528"
+            }
+         },
+         ";10.240.211.140;52060" : {
+            "Counters" : {},
+            "Metadata" : {
+               "pid" : "3473",
+               "addr" : "10.240.211.140",
+               "port" : "52060",
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         ";10.240.78.198;48821" : {
+            "Metadata" : {
+               "pid" : "3484",
+               "port" : "48821",
+               "addr" : "10.240.78.198",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         ";10.240.211.140;52326" : {
+            "Metadata" : {
+               "pid" : "4485",
+               "port" : "52326",
+               "addr" : "10.244.0.2",
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            },
+            "Counters" : {}
+         },
+         ";10.240.211.140;52063" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "addr" : "10.240.211.140",
+               "port" : "52063",
+               "pid" : "3473"
+            }
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40941" : {
+            "Metadata" : {
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "pid" : "32391",
+               "port" : "40941",
+               "addr" : "10.244.1.3"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;10.244.1.1;44803" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "port" : "44803",
+               "addr" : "10.244.1.1",
+               "pid" : "3484"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;10.244.1.4;39230" : {
+            "Metadata" : {
+               "pid" : "4465",
+               "port" : "39230",
+               "addr" : "10.244.1.4",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         ";10.240.78.198;56169" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "port" : "56169",
+               "addr" : "10.240.78.198",
+               "pid" : "3486"
+            },
+            "Counters" : {}
+         },
+         ";10.240.211.140;47498" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "endpoint",
+               "addr" : "10.240.211.140",
+               "port" : "47498",
+               "pid" : "3475"
+            }
+         },
+         "kubernetes-minion-wr4o;127.0.0.1;47250" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "pid" : "4583",
+               "port" : "47250",
+               "addr" : "127.0.0.1"
+            }
+         },
+         ";10.240.211.140;47497" : {
+            "Metadata" : {
+               "pid" : "3475",
+               "port" : "47497",
+               "addr" : "10.240.211.140",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40913" : {
+            "Counters" : {},
+            "Metadata" : {
+               "port" : "40913",
+               "addr" : "10.244.1.3",
+               "pid" : "32158",
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         ";10.240.211.140;47496" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "pid" : "3475",
+               "addr" : "10.240.211.140",
+               "port" : "47496"
+            }
+         },
+         ";10.240.78.198;35529" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "addr" : "10.244.1.3",
+               "port" : "35529",
+               "pid" : "32158"
+            }
+         },
+         ";10.240.78.198;48822" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "addr" : "10.240.78.198",
+               "port" : "48822",
+               "pid" : "3484"
+            }
+         },
+         ";10.0.0.1;443" : {
+            "Counters" : {},
+            "Metadata" : {
+               "port" : "44803",
+               "addr" : "10.244.1.1",
+               "pid" : "3484",
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            }
+         },
+         ";10.240.211.140;60731" : {
+            "Counters" : {},
+            "Metadata" : {
+               "pid" : "2362",
+               "port" : "60731",
+               "addr" : "10.240.211.140",
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-1lle;<host>"
+            }
+         },
+         ";10.240.78.198;48844" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "addr" : "10.240.78.198",
+               "port" : "48844",
+               "pid" : "3484"
+            }
+         },
+         ";10.240.211.140;54318" : {
+            "Metadata" : {
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "pid" : "19763",
+               "addr" : "10.240.211.140",
+               "port" : "54318"
+            },
+            "Counters" : {}
+         },
+         ";10.240.78.198;37863" : {
+            "Metadata" : {
+               "port" : "37863",
+               "addr" : "10.240.78.198",
+               "pid" : "3486",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         ";10.240.78.198;38883" : {
+            "Metadata" : {
+               "addr" : "10.240.78.198",
+               "port" : "38883",
+               "pid" : "2357",
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>"
+            },
+            "Counters" : {}
+         },
+         "kubernetes-minion-wr4o;10.244.1.4;39228" : {
+            "Metadata" : {
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "addr" : "10.244.1.4",
+               "port" : "39228",
+               "pid" : "4465"
+            },
+            "Counters" : {}
+         },
+         ";10.240.211.140;37102" : {
+            "Counters" : {},
+            "Metadata" : {
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "addr" : "10.240.211.140",
+               "port" : "37102",
+               "pid" : "2350"
+            }
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;35528" : {
+            "Counters" : {},
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint",
+               "addr" : "10.244.1.3",
+               "port" : "35528",
+               "pid" : "32158"
+            }
+         },
+         ";10.240.78.198;39770" : {
+            "Metadata" : {
+               "topology" : "endpoint",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "addr" : "10.240.78.198",
+               "port" : "39770",
+               "pid" : "3486"
+            },
+            "Counters" : {}
+         },
+         ";10.240.78.198;48807" : {
+            "Metadata" : {
+               "port" : "48807",
+               "addr" : "10.240.78.198",
+               "pid" : "3484",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            },
+            "Counters" : {}
+         },
+         ";10.240.78.198;47597" : {
+            "Counters" : {},
+            "Metadata" : {
+               "port" : "47597",
+               "addr" : "10.240.78.198",
+               "pid" : "3484",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "topology" : "endpoint"
+            }
+         }
+      },
+      "EdgeMetadatas" : {
+         ";10.240.211.140;37102|;169.254.169.254;80" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;47306|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.1;44803|kubernetes-minion-wr4o;10.244.1.4;39228" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;48808|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-1lle;10.244.0.1;36267|kubernetes-minion-1lle;10.244.0.3;8080" : {
+            "max_conn_count_tcp" : 2
+         },
+         ";10.240.78.198;48807|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;48847|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.4;34484|;10.0.0.1;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;42853|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.211.140;52060|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.211.140;47497|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-1lle;10.244.0.2;52326|;74.125.71.95;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;127.0.0.1;46754|kubernetes-minion-wr4o;127.0.0.1;4001" : {
+            "max_conn_count_tcp" : 2
+         },
+         "kubernetes-minion-wr4o;10.244.1.1;60988|kubernetes-minion-wr4o;10.244.1.4;8080" : {
+            "max_conn_count_tcp" : 2
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40914|;10.0.0.1;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.1;44803|kubernetes-minion-wr4o;10.244.1.3;40938" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40911|;10.0.0.1;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;48821|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;48848|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;37865|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;48823|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.211.140;47498|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;35528|;169.254.169.254;80" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.1;44803|kubernetes-minion-wr4o;10.244.1.4;39232" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.211.140;47496|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.1;44803|kubernetes-minion-wr4o;10.244.1.3;40941" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.4;39230|;10.0.0.1;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;37863|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;47601|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.1;44803|kubernetes-minion-wr4o;10.244.1.3;40914" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;127.0.0.1;46772|kubernetes-minion-wr4o;127.0.0.1;4001" : {
+            "max_conn_count_tcp" : 2
+         },
+         ";10.240.78.198;47597|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.211.140;60731|;169.254.169.254;80" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.211.140;52063|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.1;44803|kubernetes-minion-wr4o;10.244.1.3;40936" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;39770|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;127.0.0.1;46804|kubernetes-minion-wr4o;127.0.0.1;4001" : {
+            "max_conn_count_tcp" : 2
+         },
+         "kubernetes-minion-wr4o;10.244.1.4;39228|;10.0.0.1;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.1;44803|kubernetes-minion-wr4o;10.244.1.3;40913" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.211.140;54318|;10.240.28.126;4040" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.1;44803|kubernetes-minion-wr4o;10.244.1.4;39230" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;43266|;10.240.28.126;4040" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.1;44803|kubernetes-minion-wr4o;10.244.1.3;40911" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;56133|;169.254.169.254;80" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40913|;10.0.0.1;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.1;44803|kubernetes-minion-wr4o;10.244.1.3;40940" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;56169|;169.254.169.254;80" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.211.140;52062|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40940|;10.0.0.1;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40938|;10.0.0.1;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.1;44803|kubernetes-minion-wr4o;10.244.1.3;40915" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;127.0.0.1;47250|kubernetes-minion-wr4o;127.0.0.1;4001" : {
+            "max_conn_count_tcp" : 2
+         },
+         ";10.240.211.140;37082|;169.254.169.254;80" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;38883|;169.254.169.254;80" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;47599|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.1;44803|kubernetes-minion-wr4o;10.244.1.4;34484" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;48844|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40915|;10.0.0.1;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;48822|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;43281|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;48817|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.4;39232|;10.0.0.1;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;38830|;169.254.169.254;80" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40936|;10.0.0.1;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;40941|;10.0.0.1;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.78.198;48842|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.211.140;47499|;10.240.28.126;443" : {
+            "max_conn_count_tcp" : 1
+         },
+         ";10.240.211.140;60767|;169.254.169.254;80" : {
+            "max_conn_count_tcp" : 1
+         },
+         "kubernetes-minion-wr4o;10.244.1.3;35529|;169.254.169.254;80" : {
+            "max_conn_count_tcp" : 1
+         }
+      },
+      "Adjacency" : {
+         ">;10.240.78.198;48848" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.78.198;48847" : [
+            ";10.240.28.126;443"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.3;35529" : [
+            ";169.254.169.254;80"
+         ],
+         ">;10.240.78.198;48808" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.211.140;52060" : [
+            ";10.240.28.126;443"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.3;35528" : [
+            ";169.254.169.254;80"
+         ],
+         ">kubernetes-minion-wr4o;127.0.0.1;46772" : [
+            "kubernetes-minion-wr4o;127.0.0.1;4001"
+         ],
+         ">;10.240.78.198;48844" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.78.198;48822" : [
+            ";10.240.28.126;443"
+         ],
+         ">kubernetes-minion-wr4o;127.0.0.1;47250" : [
+            "kubernetes-minion-wr4o;127.0.0.1;4001"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.4;39228" : [
+            ";10.0.0.1;443"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.1;44803" : [
+            "kubernetes-minion-wr4o;10.244.1.3;40911",
+            "kubernetes-minion-wr4o;10.244.1.3;40913",
+            "kubernetes-minion-wr4o;10.244.1.3;40914",
+            "kubernetes-minion-wr4o;10.244.1.3;40915",
+            "kubernetes-minion-wr4o;10.244.1.3;40936",
+            "kubernetes-minion-wr4o;10.244.1.3;40938",
+            "kubernetes-minion-wr4o;10.244.1.3;40940",
+            "kubernetes-minion-wr4o;10.244.1.3;40941",
+            "kubernetes-minion-wr4o;10.244.1.4;34484",
+            "kubernetes-minion-wr4o;10.244.1.4;39228",
+            "kubernetes-minion-wr4o;10.244.1.4;39230",
+            "kubernetes-minion-wr4o;10.244.1.4;39232"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.4;39232" : [
+            ";10.0.0.1;443"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.3;40936" : [
+            ";10.0.0.1;443"
+         ],
+         ">;10.240.78.198;37865" : [
+            ";10.240.28.126;443"
+         ],
+         ">kubernetes-minion-1lle;10.244.0.1;36267" : [
+            "kubernetes-minion-1lle;10.244.0.3;8080"
+         ],
+         ">;10.240.211.140;47497" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.78.198;39770" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.78.198;43266" : [
+            ";10.240.28.126;4040"
+         ],
+         ">;10.240.78.198;38883" : [
+            ";169.254.169.254;80"
+         ],
+         ">;10.240.78.198;47597" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.211.140;52063" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.211.140;47498" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.211.140;37082" : [
+            ";169.254.169.254;80"
+         ],
+         ">;10.240.78.198;47306" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.211.140;47499" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.78.198;56169" : [
+            ";169.254.169.254;80"
+         ],
+         ">;10.240.78.198;43281" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.211.140;52062" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.211.140;37102" : [
+            ";169.254.169.254;80"
+         ],
+         ">kubernetes-minion-wr4o;127.0.0.1;46804" : [
+            "kubernetes-minion-wr4o;127.0.0.1;4001"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.4;34484" : [
+            ";10.0.0.1;443"
+         ],
+         ">;10.240.78.198;38830" : [
+            ";169.254.169.254;80"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.3;40914" : [
+            ";10.0.0.1;443"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.1;60988" : [
+            "kubernetes-minion-wr4o;10.244.1.4;8080"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.3;40911" : [
+            ";10.0.0.1;443"
+         ],
+         ">;10.240.78.198;48807" : [
+            ";10.240.28.126;443"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.3;40938" : [
+            ";10.0.0.1;443"
+         ],
+         ">;10.240.78.198;47601" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.211.140;47496" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.78.198;48817" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.78.198;48842" : [
+            ";10.240.28.126;443"
+         ],
+         ">kubernetes-minion-wr4o;127.0.0.1;46754" : [
+            "kubernetes-minion-wr4o;127.0.0.1;4001"
+         ],
+         ">;10.240.211.140;60731" : [
+            ";169.254.169.254;80"
+         ],
+         ">;10.240.78.198;42853" : [
+            ";10.240.28.126;443"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.3;40915" : [
+            ";10.0.0.1;443"
+         ],
+         ">kubernetes-minion-1lle;10.244.0.2;52326" : [
+            ";74.125.71.95;443"
+         ],
+         ">;10.240.78.198;37863" : [
+            ";10.240.28.126;443"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.4;39230" : [
+            ";10.0.0.1;443"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.3;40913" : [
+            ";10.0.0.1;443"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.3;40940" : [
+            ";10.0.0.1;443"
+         ],
+         ">;10.240.78.198;56133" : [
+            ";169.254.169.254;80"
+         ],
+         ">;10.240.78.198;47599" : [
+            ";10.240.28.126;443"
+         ],
+         ">kubernetes-minion-wr4o;10.244.1.3;40941" : [
+            ";10.0.0.1;443"
+         ],
+         ">;10.240.211.140;54318" : [
+            ";10.240.28.126;4040"
+         ],
+         ">;10.240.78.198;48823" : [
+            ";10.240.28.126;443"
+         ],
+         ">;10.240.211.140;60767" : [
+            ";169.254.169.254;80"
+         ],
+         ">;10.240.78.198;48821" : [
+            ";10.240.28.126;443"
+         ]
+      }
+   },
+   "Host" : {
+      "NodeMetadatas" : {
+         "kubernetes-minion-wr4o;<host>" : {
+            "Counters" : {},
+            "Metadata" : {
+               "ts" : "2015-08-27T09:38:26.42335575Z",
+               "topology" : "host",
+               "os" : "linux",
+               "uptime" : "1h9m48s",
+               "local_networks" : "127.0.0.1/8 10.240.78.198/32 10.244.1.1/24",
+               "host_name" : "kubernetes-minion-wr4o",
+               "host_node_id" : "kubernetes-minion-wr4o;<host>",
+               "load" : "1.34 0.89 0.66",
+               "kernel_version" : "3.16.0-0.bpo.4-amd64 #1 SMP Debian 3.16.7-ckt11-1+deb8u2~bpo70+1 (2015-07-22)"
+            }
+         },
+         "kubernetes-minion-1lle;<host>" : {
+            "Metadata" : {
+               "host_node_id" : "kubernetes-minion-1lle;<host>",
+               "uptime" : "1h9m44s",
+               "local_networks" : "127.0.0.1/8 10.240.211.140/32 10.244.0.1/24",
+               "host_name" : "kubernetes-minion-1lle",
+               "kernel_version" : "3.16.0-0.bpo.4-amd64 #1 SMP Debian 3.16.7-ckt11-1+deb8u2~bpo70+1 (2015-07-22)",
+               "load" : "0.06 0.33 0.33",
+               "topology" : "host",
+               "os" : "linux",
+               "ts" : "2015-08-27T09:38:27.295521598Z"
+            },
+            "Counters" : {}
+         }
+      },
+      "EdgeMetadatas" : {},
+      "Adjacency" : {}
+   },
+   "Window" : 45000000000
+}

@@ -9,6 +9,7 @@ import (
 	"github.com/weaveworks/scope/probe/docker"
 	"github.com/weaveworks/scope/probe/endpoint"
 	"github.com/weaveworks/scope/probe/host"
+	"github.com/weaveworks/scope/probe/kubernetes"
 	"github.com/weaveworks/scope/probe/process"
 	"github.com/weaveworks/scope/report"
 )
@@ -17,6 +18,9 @@ import (
 const (
 	UncontainedID    = "uncontained"
 	UncontainedMajor = "Uncontained"
+
+	UnmanagedID    = "unmanaged"
+	UnmanagedMajor = "Unmanaged"
 
 	TheInternetID    = "theinternet"
 	TheInternetMajor = "The Internet"
@@ -141,6 +145,23 @@ func MapContainerImageIdentity(m RenderableNode, _ report.Networks) RenderableNo
 	var (
 		major = m.Metadata[docker.ImageName]
 		rank  = m.Metadata[docker.ImageID]
+	)
+
+	return RenderableNodes{id: NewRenderableNodeWith(id, major, "", rank, m)}
+}
+
+// MapPodIdentity maps a pod topology node to pod renderable node. As it is
+// only ever run on pod topology nodes, we expect that certain keys
+// are present.
+func MapPodIdentity(m RenderableNode, _ report.Networks) RenderableNodes {
+	id, ok := m.Metadata[kubernetes.PodID]
+	if !ok {
+		return RenderableNodes{}
+	}
+
+	var (
+		major = m.Metadata[kubernetes.PodName]
+		rank  = m.Metadata[kubernetes.PodID]
 	)
 
 	return RenderableNodes{id: NewRenderableNodeWith(id, major, "", rank, m)}
@@ -424,6 +445,36 @@ func MapContainerImage2Name(n RenderableNode, _ report.Networks) RenderableNodes
 	node.Rank = name
 	node.Node = n.Node.Copy() // Propagate NMD for container counting.
 	return RenderableNodes{name: node}
+}
+
+// MapContainer2Pod maps container RenderableNodes to pod
+// RenderableNodes.
+//
+// If this function is given a node without a kubernetes_pod_id
+// (including other pseudo nodes), it will produce an "Unmanaged"
+// pseudo node.
+//
+// Otherwise, this function will produce a node with the correct ID
+// format for a container, but without any Major or Minor labels.
+// It does not have enough info to do that, and the resulting graph
+// must be merged with a container graph to get that info.
+func MapContainer2Pod(n RenderableNode, _ report.Networks) RenderableNodes {
+	// Propogate all pseudo nodes
+	if n.Pseudo {
+		return RenderableNodes{n.ID: n}
+	}
+
+	// Otherwise, if some some reason the container doesn't have a pod_id
+	// (maybe slightly out of sync reports), just drop it
+	id, ok := n.Node.Metadata["docker_label_io.kubernetes.pod.name"]
+	if !ok {
+		return RenderableNodes{}
+	}
+
+	// Add container-<id> key to NMD, which will later be counted to produce the minor label
+	result := NewDerivedNode(id, n)
+	result.Node.Counters[containersKey] = 1
+	return RenderableNodes{id: result}
 }
 
 // MapCountContainers maps 1:1 container image nodes, counting

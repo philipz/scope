@@ -18,6 +18,7 @@ import (
 	"github.com/weaveworks/scope/probe/docker"
 	"github.com/weaveworks/scope/probe/endpoint"
 	"github.com/weaveworks/scope/probe/host"
+	"github.com/weaveworks/scope/probe/kubernetes"
 	"github.com/weaveworks/scope/probe/overlay"
 	"github.com/weaveworks/scope/probe/process"
 	"github.com/weaveworks/scope/probe/sniff"
@@ -39,6 +40,9 @@ func main() {
 		dockerEnabled      = flag.Bool("docker", false, "collect Docker-related attributes for processes")
 		dockerInterval     = flag.Duration("docker.interval", 10*time.Second, "how often to update Docker attributes")
 		dockerBridge       = flag.String("docker.bridge", "docker0", "the docker bridge name")
+		kubernetesEnabled  = flag.Bool("kubernetes", false, "collect kubernetes-related attributes for containers, should only be enabled on the master node")
+		kubernetesAPI      = flag.String("kubernetes.api", "http://localhost:8080", "Address of kubernetes master api")
+		kubernetesInterval = flag.Duration("kubernetes.interval", 10*time.Second, "how often to update Kubernetes attributes")
 		weaveRouterAddr    = flag.String("weave.router.addr", "", "IP address or FQDN of the Weave router")
 		procRoot           = flag.String("proc.root", "/proc", "location of the proc filesystem")
 		captureEnabled     = flag.Bool("capture", false, "perform sampled packet capture")
@@ -128,6 +132,17 @@ func main() {
 
 		taggers = append(taggers, docker.NewTagger(dockerRegistry, processCache))
 		reporters = append(reporters, docker.NewReporter(dockerRegistry, hostID))
+	}
+
+	if *kubernetesEnabled {
+		kubernetesRegistry, err := kubernetes.NewRegistry(*kubernetesAPI, *kubernetesInterval)
+		if err != nil {
+			log.Fatalf("failed to start kubernetes registry: %v", err)
+		}
+		defer kubernetesRegistry.Stop()
+
+		taggers = append(taggers, kubernetes.NewTagger(kubernetesRegistry))
+		reporters = append(reporters, kubernetes.NewReporter(kubernetesRegistry))
 	}
 
 	if *weaveRouterAddr != "" {

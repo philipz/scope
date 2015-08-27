@@ -23,7 +23,9 @@ func (t Tagger) Tag(r report.Report) (report.Report, error) {
 	// and as such do their own host tagging
 	for _, topology := range []report.Topology{r.Process, r.Container, r.ContainerImage, r.Host, r.Overlay} {
 		for id, md := range topology.Nodes {
-			topology.Nodes[id] = md.Merge(other)
+			if _, ok := md.Metadata[report.HostNodeID]; !ok {
+				topology.Nodes[id] = md.Merge(other)
+			}
 		}
 	}
 	return r, nil

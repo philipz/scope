@@ -149,6 +149,22 @@ var topologyRegistry = map[string]topologyView{
 		parent:   "",
 		renderer: render.HostRenderer,
 	},
+	"kubernetes": {
+		human:    "Kubernetes",
+		parent:   "",
+		renderer: render.KubernetesRenderer,
+	},
+	/*
+		"kubernetes-expr": {
+			human:  "Kubernetes (expr)",
+			parent: "",
+			renderer: render.ExpressionRenderer(
+				"ALL GROUPBY {{docker_label_io.kubernetes.pod.name}}",
+				"WITH {{kubernetes_namespace=kube-system}} REMOVE",
+				"NOT WITH {{docker_label_io.kubernetes.pod.name}} REMOVE",
+			),
+		},
+	*/
 }
 
 type topologyView struct {
