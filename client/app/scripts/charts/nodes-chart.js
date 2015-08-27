@@ -42,10 +42,10 @@ const NodesChart = React.createClass({
   },
 
   componentWillReceiveProps: function(nextProps) {
-    debug('fingerprint',
-      _.size(nextProps.nodes), md5(this.getTopologyFingerprint(nextProps.nodes)),
-      _.size(nextProps.nodes), md5(this.getTopologyFingerprint(this.props.nodes)));
-    if (this.getTopologyFingerprint(nextProps.nodes) !== this.getTopologyFingerprint(this.props.nodes)) {
+    // debug('fingerprint',
+    //   _.size(nextProps.nodes), md5(this.getTopologyFingerprint(nextProps.nodes)),
+    //   _.size(this.props.nodes), md5(this.getTopologyFingerprint(this.props.nodes)));
+    if (nextProps.nodes !== this.props.nodes) {
       this.setState({
         hasZoomed: false,
         initialLayout: true
@@ -140,7 +140,7 @@ const NodesChart = React.createClass({
     const centerY = this.props.height / 2;
     const nodes = {};
 
-    _.each(topology, function(node, id) {
+    topology.forEach(function(node, id) {
       nodes[id] = {};
 
       // use cached positions if available
@@ -151,14 +151,13 @@ const NodesChart = React.createClass({
 
       // copy relevant fields to state nodes
       _.assign(nodes[id], {
-        adjacency: node.adjacency,
         id: id,
-        label: node.label_major,
-        pseudo: node.pseudo,
-        subLabel: node.label_minor,
-        rank: node.rank
+        label: node.get('label_major'),
+        pseudo: node.get('pseudo'),
+        subLabel: node.get('label_minor'),
+        rank: node.get('rank')
       });
-    }, this);
+    });
 
     return nodes;
   },
@@ -166,34 +165,37 @@ const NodesChart = React.createClass({
   initEdges: function(topology, nodes) {
     const edges = {};
 
-    _.each(topology, function(node) {
-      _.each(node.adjacency, function(adjacent) {
-        const edge = [node.id, adjacent];
-        const edgeId = edge.join(Naming.EDGE_ID_SEPARATOR);
+    topology.forEach(function(node, nodeId) {
+      const adjacency = node.get('adjacency');
+      if (adjacency) {
+        adjacency.forEach(function(adjacent) {
+          const edge = [nodeId, adjacent];
+          const edgeId = edge.join(Naming.EDGE_ID_SEPARATOR);
 
-        if (!edges[edgeId]) {
-          const source = nodes[edge[0]];
-          const target = nodes[edge[1]];
+          if (!edges[edgeId]) {
+            const source = nodes[edge[0]];
+            const target = nodes[edge[1]];
 
-          if (!source || !target) {
-            debug('Missing edge node', edge[0], source, edge[1], target);
+            if (!source || !target) {
+              debug('Missing edge node', edge[0], source, edge[1], target);
+            }
+
+            edges[edgeId] = {
+              id: edgeId,
+              value: 1,
+              source: target,
+              target: source
+            };
           }
-
-          edges[edgeId] = {
-            id: edgeId,
-            value: 1,
-            source: target,
-            target: source
-          };
-        }
-      });
-    }, this);
+        });
+      }
+    });
 
     return edges;
   },
 
   updateGraphState: function(props) {
-    const n = _.size(props.nodes);
+    const n = props.nodes.size;
 
     if (n === 0) {
       return;

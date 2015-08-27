@@ -2,10 +2,13 @@ const EventEmitter = require('events').EventEmitter;
 const _ = require('lodash');
 const assign = require('object-assign');
 const debug = require('debug')('scope:app-store');
+const Immutable = require('immutable');
 
 const AppDispatcher = require('../dispatcher/app-dispatcher');
 const ActionTypes = require('../constants/action-types');
 const Naming = require('../constants/naming');
+
+const makeOrderedMap = Immutable.OrderedMap;
 
 // Helpers
 
@@ -27,6 +30,16 @@ function findCurrentTopology(subTree, topologyId) {
   return foundTopology;
 }
 
+function makeNode(node) {
+  return {
+    id: node.id,
+    label_major: node.label_major,
+    rank: node.rank,
+    pseudo: node.pseudo,
+    adjacency: node.adjacency
+  };
+}
+
 // Initial values
 
 let currentTopologyId = 'containers';
@@ -34,7 +47,7 @@ let errorUrl = null;
 let version = '';
 let mouseOverEdgeId = null;
 let mouseOverNodeId = null;
-let nodes = {};
+let nodes = makeOrderedMap();
 let nodeDetails = null;
 let selectedNodeId = null;
 let topologies = [];
@@ -76,15 +89,17 @@ const AppStore = assign({}, EventEmitter.prototype, {
   getHighlightedEdgeIds: function() {
     if (mouseOverNodeId) {
       // all neighbour combinations because we dont know which direction exists
-      const node = nodes[mouseOverNodeId];
-      return _.flatten(
-        _.map(node.adjacency, function(nodeId) {
-          return [
-            [nodeId, mouseOverNodeId].join(Naming.EDGE_ID_SEPARATOR),
-            [mouseOverNodeId, nodeId].join(Naming.EDGE_ID_SEPARATOR)
-          ];
-        })
-      );
+      const adjacency = nodes.get(mouseOverNodeId).get('adjacency');
+      if (adjacency) {
+        return _.flatten(
+          adjacency.forEach(function(nodeId) {
+            return [
+              [nodeId, mouseOverNodeId].join(Naming.EDGE_ID_SEPARATOR),
+              [mouseOverNodeId, nodeId].join(Naming.EDGE_ID_SEPARATOR)
+            ];
+          })
+        );
+      }
     }
     if (mouseOverEdgeId) {
       return mouseOverEdgeId;
@@ -94,8 +109,10 @@ const AppStore = assign({}, EventEmitter.prototype, {
 
   getHighlightedNodeIds: function() {
     if (mouseOverNodeId) {
-      const node = nodes[mouseOverNodeId];
-      return _.union(node.adjacency, [mouseOverNodeId]);
+      const adjacency = nodes.get(mouseOverNodeId).get('adjacency');
+      if (adjacency) {
+        return _.union(adjacency.toJS(), [mouseOverNodeId]);
+      }
     }
     if (mouseOverEdgeId) {
       return mouseOverEdgeId.split(Naming.EDGE_ID_SEPARATOR);
@@ -152,7 +169,7 @@ AppStore.registeredCallback = function(payload) {
       selectedNodeId = null;
       if (payload.topologyId !== currentTopologyId) {
         currentTopologyId = payload.topologyId;
-        nodes = {};
+        nodes = nodes.clear();
       }
       AppStore.emit(AppStore.CHANGE_EVENT);
       break;
@@ -209,7 +226,7 @@ AppStore.registeredCallback = function(payload) {
 
       // flush nodes cache after re-connect
       if (websocketClosed) {
-        nodes = {};
+        nodes = nodes.clear();
       }
       websocketClosed = false;
 
@@ -219,20 +236,20 @@ AppStore.registeredCallback = function(payload) {
         if (mouseOverNodeId === nodeId) {
           mouseOverNodeId = null;
         }
-        if (nodes[nodeId] && _.contains(mouseOverEdgeId, nodeId)) {
+        if (nodes.has(nodeId) && _.contains(mouseOverEdgeId, nodeId)) {
           mouseOverEdgeId = null;
         }
-        delete nodes[nodeId];
+        nodes = nodes.delete(nodeId);
       });
 
       // update existing nodes
       _.each(payload.delta.update, function(node) {
-        nodes[node.id] = node;
+        nodes = nodes.set(node.id, nodes.get(node.id).mergeDeep(makeNode(node)));
       });
 
       // add new nodes
       _.each(payload.delta.add, function(node) {
-        nodes[node.id] = node;
+        nodes = nodes.set(node.id, Immutable.fromJS(makeNode(node)));
       });
 
       AppStore.emit(AppStore.CHANGE_EVENT);
@@ -252,7 +269,7 @@ AppStore.registeredCallback = function(payload) {
 
     case ActionTypes.ROUTE_TOPOLOGY:
       if (currentTopologyId !== payload.state.topologyId) {
-        nodes = {};
+        nodes = nodes.clear();
       }
       currentTopologyId = payload.state.topologyId;
       selectedNodeId = payload.state.selectedNodeId;
