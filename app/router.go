@@ -110,6 +110,14 @@ func captureTopology(rep xfer.Reporter, f func(xfer.Reporter, topologyView, http
 			http.NotFound(w, r)
 			return
 		}
+		for param, opts := range topology.options {
+			value := r.FormValue(param)
+			for _, opt := range opts {
+				if (value == "" && opt.def) || (opt.value != "" && opt.value == value) {
+					topology.renderer = opt.decorator(topology.renderer)
+				}
+			}
+		}
 		f(rep, topology, w, r)
 	}
 }
@@ -127,22 +135,38 @@ var topologyRegistry = map[string]topologyView{
 	"applications": {
 		human:    "Applications",
 		parent:   "",
-		renderer: render.FilterUnconnected(render.ProcessWithContainerNameRenderer{}),
+		renderer: render.ProcessWithContainerNameRenderer{},
+		options: optionParams{"unconnected": {
+			{"hide", "Hide unconnected containers", true, render.FilterUnconnected},
+			{"show", "Show unconnected containers", false, nop},
+		}},
 	},
 	"applications-by-name": {
 		human:    "by name",
 		parent:   "applications",
-		renderer: render.FilterUnconnected(render.ProcessNameRenderer),
+		renderer: render.ProcessNameRenderer,
+		options: optionParams{"unconnected": {
+			{"hide", "Hide unconnected containers", true, render.FilterUnconnected},
+			{"show", "Show unconnected containers", false, nop},
+		}},
 	},
 	"containers": {
 		human:    "Containers",
 		parent:   "",
 		renderer: render.ContainerWithImageNameRenderer{},
+		options: optionParams{"system": {
+			{"show", "Show system containers", true, nop},
+			{"hide", "Hide system containers", false, render.FilterSystem},
+		}},
 	},
 	"containers-by-image": {
 		human:    "by image",
 		parent:   "containers",
 		renderer: render.ContainerImageRenderer,
+		options: optionParams{"system": {
+			{"show", "Show system containers", true, nop},
+			{"hide", "Hide system containers", false, render.FilterSystem},
+		}},
 	},
 	"hosts": {
 		human:    "Hosts",
@@ -155,4 +179,16 @@ type topologyView struct {
 	human    string
 	parent   string
 	renderer render.Renderer
+	options  optionParams
 }
+
+type optionParams map[string][]optionValue // param: values
+
+type optionValue struct {
+	value     string // "hide"
+	human     string // "Hide system containers"
+	def       bool
+	decorator func(render.Renderer) render.Renderer
+}
+
+func nop(r render.Renderer) render.Renderer { return r }

@@ -1,6 +1,10 @@
 package render
 
 import (
+	"log"
+	"strings"
+
+	"github.com/weaveworks/scope/probe/docker"
 	"github.com/weaveworks/scope/report"
 )
 
@@ -199,4 +203,79 @@ func (f Filter) Render(rpt report.Report) RenderableNodes {
 		}
 	}
 	return output
+}
+
+// FilterSystem is a Renderer which filters out system nodes.
+func FilterSystem(r Renderer) Renderer {
+	return CustomRenderer{
+		RenderFunc: nonSystem,
+		Renderer:   r,
+	}
+}
+
+func nonSystem(input RenderableNodes) RenderableNodes {
+	// Deleted nodes also need to be cut as destinations in adjacency lists.
+	// So, we need to count all nodes to reject, before effecting mutation.
+	reject := map[string]struct{}{}
+	for id, node := range input {
+		if isSystem(node.Metadata) {
+			reject[id] = struct{}{}
+		}
+	}
+
+	output := RenderableNodes{}
+	for id, node := range input {
+		// Check for completely rejected node.
+		if _, ok := reject[id]; ok {
+			continue
+		}
+
+		// Accepted node, but maybe some bad adjacencies.
+		// Cut those before continuing.
+		newAdjacency := make(report.IDList, 0, len(node.Adjacency))
+		for _, dstID := range node.Adjacency {
+			if _, ok := reject[dstID]; ok {
+				continue
+			}
+			newAdjacency = newAdjacency.Add(dstID)
+		}
+
+		// Good.
+		node.Adjacency = newAdjacency
+		output[id] = node
+	}
+	return output
+}
+
+func isSystem(md map[string]string) bool {
+	containerName := md[docker.ContainerName]
+	if _, ok := systemContainerNames[containerName]; ok {
+		return true
+	}
+	imagePrefix := strings.SplitN(md[docker.ImageName], ":", 2)[0] // :(
+	if _, ok := systemImagePrefixes[imagePrefix]; ok {
+		return true
+	}
+	if md[docker.LabelPrefix+"works.weave.role"] == "system" {
+		return true
+	}
+	return false
+}
+
+var systemContainerNames = map[string]struct{}{
+	"weavescope": {},
+	"weavedns":   {},
+	"weave":      {},
+	"weaveproxy": {},
+	"weaveexec":  {},
+	"ecs-agent":  {},
+}
+
+var systemImagePrefixes = map[string]struct{}{
+	"weaveworks/scope":        {},
+	"weaveworks/weavedns":     {},
+	"weaveworks/weave":        {},
+	"weaveworks/weaveproxy":   {},
+	"weaveworks/weaveexec":    {},
+	"amazon/amazon-ecs-agent": {},
 }
