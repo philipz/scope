@@ -5,6 +5,7 @@ import (
 
 	"github.com/weaveworks/scope/probe/docker"
 	"github.com/weaveworks/scope/probe/endpoint"
+	"github.com/weaveworks/scope/probe/kubernetes"
 	"github.com/weaveworks/scope/probe/process"
 	"github.com/weaveworks/scope/report"
 )
@@ -83,6 +84,11 @@ var (
 	UnknownAddress2NodeID = report.MakeAddressNodeID(ServerHostID, UnknownClient2IP)
 	UnknownAddress3NodeID = report.MakeAddressNodeID(ServerHostID, UnknownClient3IP)
 	RandomAddressNodeID   = report.MakeAddressNodeID(ServerHostID, RandomClientIP) // this should become an internet node
+
+	ClientPodID     = "ping/pong"
+	ServerPodID     = "wiff/waff"
+	ClientPodNodeID = report.MakePodNodeID(ClientHostID, ClientPodID)
+	ServerPodNodeID = report.MakePodNodeID(ServerHostID, ServerPodID)
 
 	Report = report.Report{
 		Endpoint: report.Topology{
@@ -193,18 +199,20 @@ var (
 		Container: report.Topology{
 			Nodes: report.Nodes{
 				ClientContainerNodeID: report.MakeNodeWith(map[string]string{
-					docker.ContainerID:   ClientContainerID,
-					docker.ContainerName: "client",
-					docker.ImageID:       ClientContainerImageID,
-					report.HostNodeID:    ClientHostNodeID,
+					docker.ContainerID:                            ClientContainerID,
+					docker.ContainerName:                          "client",
+					docker.ImageID:                                ClientContainerImageID,
+					report.HostNodeID:                             ClientHostNodeID,
+					docker.LabelPrefix + "io.kubernetes.pod.name": ClientPodID,
 				}),
 				ServerContainerNodeID: report.MakeNodeWith(map[string]string{
-					docker.ContainerID:          ServerContainerID,
-					docker.ContainerName:        "server",
-					docker.ImageID:              ServerContainerImageID,
-					report.HostNodeID:           ServerHostNodeID,
-					docker.LabelPrefix + "foo1": "bar1",
-					docker.LabelPrefix + "foo2": "bar2",
+					docker.ContainerID:                            ServerContainerID,
+					docker.ContainerName:                          "server",
+					docker.ImageID:                                ServerContainerImageID,
+					report.HostNodeID:                             ServerHostNodeID,
+					docker.LabelPrefix + "foo1":                   "bar1",
+					docker.LabelPrefix + "foo2":                   "bar2",
+					docker.LabelPrefix + "io.kubernetes.pod.name": ServerPodID,
 				}),
 			},
 		},
@@ -273,6 +281,24 @@ var (
 				}),
 			},
 		},
+		Pod: report.Topology{
+			Nodes: report.Nodes{
+				ClientPodNodeID: report.MakeNodeWith(map[string]string{
+					kubernetes.PodID:           "ping/pong",
+					kubernetes.PodName:         "pong",
+					kubernetes.Namespace:       "ping",
+					kubernetes.PodContainerIDs: ClientContainerID,
+				}),
+				ServerPodNodeID: report.MakeNodeWith(map[string]string{
+					kubernetes.PodID:           "wiff/waff",
+					kubernetes.PodName:         "waff",
+					kubernetes.Namespace:       "wiff",
+					kubernetes.PodContainerIDs: ServerContainerID,
+				}),
+			},
+		},
+		// TODO: Fill this in
+		Service: report.Topology{},
 		Sampling: report.Sampling{
 			Count: 1024,
 			Total: 4096,

@@ -42,10 +42,8 @@ var (
 func TestReporter(t *testing.T) {
 	want := report.MakeReport()
 	want.Pod = report.Topology{
-		Adjacency:     report.Adjacency{},
-		EdgeMetadatas: report.EdgeMetadatas{},
-		NodeMetadatas: report.NodeMetadatas{
-			report.MakePodNodeID("ping", "pong"): report.MakeNodeMetadataWith(map[string]string{
+		Nodes: report.Nodes{
+			report.MakePodNodeID("ping", "ping/pong"): report.MakeNodeWith(map[string]string{
 				kubernetes.PodID:           "ping/pong",
 				kubernetes.PodName:         "pong",
 				kubernetes.Namespace:       "ping",

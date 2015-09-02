@@ -44,8 +44,8 @@ func (p *mockPod) ContainerIDs() []string {
 	return ids
 }
 
-func (p *mockPod) GetNodeMetadata() report.NodeMetadata {
-	return report.MakeNodeMetadataWith(map[string]string{
+func (p *mockPod) GetNode() report.Node {
+	return report.MakeNodeWith(map[string]string{
 		kubernetes.PodID:           p.ID(),
 		kubernetes.PodName:         p.Name(),
 		kubernetes.Namespace:       p.Namespace(),
