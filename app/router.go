@@ -164,8 +164,8 @@ var topologyRegistry = map[string]topologyView{
 		parent:   "containers",
 		renderer: render.ContainerImageRenderer,
 		options: optionParams{"system": {
-			{"show", "Show system containers", true, nop},
-			{"hide", "Hide system containers", false, render.FilterSystem},
+			{"show", "Show system containers", false, nop},
+			{"hide", "Hide system containers", true, render.FilterSystem},
 		}},
 	},
 	"hosts": {
