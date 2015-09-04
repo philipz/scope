@@ -39,7 +39,7 @@ func TestContainerFilterRenderer(t *testing.T) {
 	// it is filtered out correctly.
 	input := test.Report.Copy()
 	input.Container.Nodes[test.ClientContainerNodeID].Metadata[docker.LabelPrefix+"works.weave.role"] = "system"
-	have := expected.Sterilize(render.FilterSystem(render.ContainerRenderer).Render(input))
+	have := expected.Sterilize(render.FilterSystem(render.ContainerWithImageNameRenderer{}).Render(input))
 	want := expected.RenderedContainers.Copy()
 	delete(want, test.ClientContainerID)
 	if !reflect.DeepEqual(want, have) {
