@@ -1,3 +1,42 @@
+## Release 0.7.0
+
+New features:
+- Show short-lived connections in the containers view.
+  [#356](https://github.com/weaveworks/scope/issues/356)
+- Details pane: add more information (docker labels, Weave IPs/hostnames,
+  host/container context when ambiguous) and present it in a more intuitive way
+  (include relevant information in the table titles, merge all the
+  connection-related information into a single table, stop including empty fields).
+  [#394](https://github.com/weaveworks/scope/pull/394)
+  [#396](https://github.com/weaveworks/scope/pull/396)
+  [#400](https://github.com/weaveworks/scope/pull/400)
+  [#387](https://github.com/weaveworks/scope/pull/387)
+  [#370](https://github.com/weaveworks/scope/issues/370)
+  [#322](https://github.com/weaveworks/scope/issues/322)
+- Improve rendering by making edges' directions flow from client to server.
+  [#355](https://github.com/weaveworks/scope/pull/355)
+- Show more information for pseudo nodes where possible - such as processes for uncontained, and connects to/from the internet.
+  [#249](https://github.com/weaveworks/scope/issues/249)
+  [#401](https://github.com/weaveworks/scope/pull/401)
+  [#426](https://github.com/weaveworks/scope/pull/426)
+- Truncate node names and text in the details pane.
+  [#429](https://github.com/weaveworks/scope/pull/429)
+  [#430](https://github.com/weaveworks/scope/pull/430)
+- Annotate processes in containers with the container name, in the *Applications* view.
+  [#331](https://github.com/weaveworks/scope/issues/331)
+- Improve graph transitions between updates.
+  [#379](https://github.com/weaveworks/scope/pull/379)
+- Label system containers with `works.weave.role=system`.
+  [#337](https://github.com/weaveworks/scope/issues/337)
+- Support upcoming Weave status interface
+  [#389](https://github.com/weaveworks/scope/pull/389)
+
+Bug fixes:
+- *Trying to reconnect..* in UI even though its connected.
+  [#392](https://github.com/weaveworks/scope/pull/392)
+- Applications view goes blank after a few seconds.
+  [#442](https://github.com/weaveworks/scope/pull/442)
+
 ## Release 0.6.0
 
 New features:
